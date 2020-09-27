@@ -1,0 +1,162 @@
+/* ------------------ navbar --------------  */
+nav {
+  position: relative;
+}
+
+.navbar {
+  background-color: #333;
+}
+
+/* ---------------- time ticket ----------------- */
+.timeEvent {
+  padding: 30px 0;
+  background-color: #eee;
+}
+
+.timeEvent ul {
+  padding: 0;
+}
+
+.timeEvent h1 {
+  margin: 0 auto;
+  font-size: 3.5em;
+  border-top: 2px solid #333;
+  border-bottom: 2px solid #333;
+  padding: 15px;
+  font-weight: bold;
+  width: 50%;
+}
+
+.timeEvent button {
+  padding: 15px 20px;
+  font-size: 1.3em;
+}
+
+.timeEvent button:hover {
+  background-color: #eee;
+}
+
+@media (max-width: 768px) {
+  footer .timeEvent h1 {
+    width: 100%;
+    font-size: 2em;
+  }
+}
+
+/* -------------- counter --------------- */
+.contain li {
+  display: inline-block;
+  font-size: 1.5em;
+  list-style-type: none;
+  padding: 1em;
+  text-transform: uppercase;
+}
+
+.contain li span {
+  display: block;
+  font-size: 4.5rem;
+}
+
+.contain {
+  color: #333;
+  margin: 0 auto;
+  padding: 0.5rem;
+}
+
+/* ---------------- article --------------- */
+article {
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+article .content {
+  margin-top: 100px;
+  padding-right: 50px;
+}
+
+article .content ul li {
+  font-size: 1.3em;
+}
+
+article .content ul li i {
+  margin-right: 10px;
+  width: 20px;
+  text-align: center;
+}
+
+article .content button {
+  padding: 10px 20px;
+}
+
+article .content p.price span {
+  padding: 15px;
+  line-height: 3.2em;
+  border-radius: 3px;
+  border: #333 2px solid;
+  transition: all ease-in-out .5s;
+  font-weight: bold;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+article .content p.description:first-of-type {
+  border-top: 2px solid #eee;
+}
+
+article .content p.description {
+  font-size: 1.1em;
+}
+
+article .imgPart {
+  position: relative;
+  z-index: 1;
+  padding: 0 50px 0 30px;
+}
+
+article .imgPart img {
+  min-width: 100%;
+}
+
+article .imgPart::after {
+  position: absolute;
+  left: 50px;
+  top: -50px;
+  width: calc(100% - 50px);
+  height: 100%;
+  border: 20px solid #f1f1f1;
+  content: "";
+  border-radius: 0.25rem;
+  z-index: -1;
+}
+
+article .row:nth-child(2) .imgPart {
+  padding-left: 50px;
+  padding-right: 0;
+}
+
+article .row:nth-child(2) .imgPart::after {
+  left: 0;
+}
+
+.tours__item__pic img {
+  min-width: 100%;
+}
+
+/* --------------- footer ---------------- */
+footer {
+  background-color: #eee;
+}
+
+/*// Extra small devices (portrait phones, less than 576px) */
+/* // No media query for `xs` since this is the default in Bootstrap */
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}

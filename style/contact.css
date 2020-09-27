@@ -1,0 +1,77 @@
+/* ------------------ navbar --------------  */
+.navbar {
+  background-color: #333;
+}
+
+nav {
+  position: relative;
+}
+
+/* ---------------- breadcrumb --------------- */
+nav.breadcrumb {
+  background-color: transparent;
+  z-index: 0;
+}
+
+.breadcrumb ol li {
+  font-size: 1.2em;
+}
+
+.breadcrumb ol li a {
+  color: #333;
+  transition: ease-in-out all 0.7s;
+}
+
+.breadcrumb ol li a:hover {
+  text-decoration: none;
+}
+
+.breadcrumb ol li.active::before {
+  content: "|";
+}
+
+/* ------------------ article ------------------  */
+article iframe {
+  width: 100%;
+  height: 500px;
+  border: none;
+}
+
+article .contactForm textarea {
+  resize: none;
+}
+
+article .contactAddress ul li span i {
+  font-size: 1.7em;
+  width: 60px;
+  height: 60px;
+  background-color: #eee;
+  line-height: 60px;
+  border-radius: 50%;
+}
+
+.form-control:focus {
+  color: #333;
+  background-color: #fff;
+  border-color: rgba(51, 51, 51, 0.4);
+  box-shadow: 0 0 0 0.2rem rgba(51, 51, 51, 0.2);
+}
+
+/* --------------- footer ---------------- */
+footer {
+  background-color: #eee;
+}
+
+/*// Extra small devices (portrait phones, less than 576px) */
+/* // No media query for `xs` since this is the default in Bootstrap */
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}
