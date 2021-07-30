@@ -21,7 +21,7 @@ $(function() {
     minute = second * 60,
     hour = minute * 60,
     day = hour * 24;
-  let countDown = new Date('13 nov 2020 00:00:00').getTime(),
+  let countDown = new Date('13 nov 2022 00:00:00').getTime(),
     x = setInterval(function() {
       'use strict';
       let now = new Date().getTime(),
