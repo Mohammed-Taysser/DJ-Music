@@ -37,6 +37,10 @@ const gulp = require('gulp'),
             src: 'src/images/**',
             dest: 'dist/images/',
         },
+        music: {
+            src: 'src/music/**',
+            dest: 'dist/music/',
+        },
     };
 function clean() {
     'use strict';
@@ -135,6 +139,12 @@ function images_task() {
         .pipe(gulp.dest(paths.images.dest));
 }
 
+function music_task() {
+    'use strict';
+    return gulp.src(paths.music.src)
+        .pipe(gulp.dest(paths.music.dest));
+}
+
 function watch_fun() {
     'use strict';
     gulp.watch('src/html/**/*.pug', html_task);
@@ -145,6 +155,7 @@ function watch_fun() {
     gulp.watch('src/css/**/*.scss', scss_task);
     // gulp.watch(paths.scss.src, demo_scss_task);
     gulp.watch(paths.images.src, images_task);
+    gulp.watch(paths.music.src, music_task);
 }
 
 
@@ -156,6 +167,7 @@ exports.default = gulp.series(clean,
     fonts_task,
     images_task,
     scss_task,
+    music_task,
     // demo_scss_task,
     gulp.parallel(watch_fun),
 );
