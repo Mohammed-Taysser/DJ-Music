@@ -68,3 +68,27 @@ header {
     right: 30px;
   }
 }
+
+.about-me{
+  .about-me h2 {
+    font-size: 2.7em;
+    font-weight: bold;
+  }
+  
+  .about-me h2::before {
+    font-family: 'Kaushan Script', cursive;
+    position: absolute;
+    font-size: 1.5em;
+    font-weight: normal;
+    color: #f2f2f2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    content: "About mi";
+    z-index: -1;
+  }
+  
+  .about-me .img img {
+    animation: border-transform 10s linear infinite alternate forwards;
+  }
+}
