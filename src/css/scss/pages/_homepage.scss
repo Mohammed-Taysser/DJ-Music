@@ -4,16 +4,6 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
 
-  .overlay {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: #f1f1f1e6;
-  }
   .real-header {
     transform: translateY(-50%) translateX(-50%);
     top: 50%;
@@ -326,4 +316,26 @@ header {
       }
     }
   }
+}
+
+.works .lastWork {
+  background-image: url("../images/color-full.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 530px;
+  .overlay{
+    background-color: #f1f1f13d;
+  }
+  .player {
+    top: 50%;
+    background-color: $main-bg;
+    .icon{
+      color: #fff;
+    }
+  }
+}
+
+.works .oldWorks .work:nth-child(1),
+.works .oldWorks .work:nth-child(4) {
+  background-color: #f2f2f2;
 }
