@@ -9,6 +9,7 @@ block style
 block javascript 
 	script(src="../javascript/build/glide.min.js") 
 	script(src="../javascript/build/howler.min.js") 
+	script(src="../javascript/build/simple-bar.min.js") 
 
 block content 
 
@@ -42,10 +43,12 @@ block content
 		section.about-me.my-5.py-5
 			.container
 				.row
-					.img.col-md-4.align-self-center
+					.img.col-md-5.align-self-center
 						img.img-fluid.w-100(src='../images/my-photo.jpg' alt="it's my-photo")
 					.content.col-md-7.align-self-center
 						h2.my-3.background-text Dr Strange
 						p.lead.text-muted
 							| I would lay down my life for two brothers or eight cousins.&rdquo;With that in mind, let&rsquo;s imagine a big extended family made up of 27 immediate families&mdash;the grandchildren and great-grandchildren of a single couple
 						button.btn.btn-aurora.btn-lg Contact Me
+
+		include ../components/podcast-tracks

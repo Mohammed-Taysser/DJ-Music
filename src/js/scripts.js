@@ -21,7 +21,9 @@ const close_button = document.getElementById('js-menu-toggle'),
     },
     current_year = document.getElementById('js-current-year'),
     header_angle_down = document.querySelector('header .angle-down '),
-    hero_header_index_page = document.getElementById('js-header');
+    hero_header_index_page = document.getElementById('js-header'),
+    podcast_ids = document.querySelectorAll('.single-music-container'),
+    podcast_container = document.getElementById('js-simple-bar-scroll');
 
 // Toggle menu on navbar
 
@@ -60,6 +62,11 @@ if (header_angle_down) {
     };
 }
 
+// Podcast Slider
+
+if(podcast_container){
+    new SimpleBar(podcast_container);
+}
 // Glide slider
 
 array_of_slider_id.forEach(slider_id => {
@@ -82,33 +89,101 @@ if (hero_header_index_page) {
     setWindowHeight();
 }
 
-// music player 'howler'
+// Music player 'howler'
+if (podcast_ids) {
+    const sounds_ids = [];
 
-document.getElementById('js-music-player').onclick = function () {
+    for (let index = 0; index < podcast_ids.length; index++) {
+        const play_btn = podcast_ids[index].querySelector('.player-btn .play'),
+            pause_btn = podcast_ids[index].querySelector('.player-btn .pause'),
+            volume_input = podcast_ids[index].querySelector('.sound-controller .volume-changer'),
+            volume_label = podcast_ids[index].querySelector('.sound-controller .volume-label'),
+            progress_bar = podcast_ids[index].querySelector('.play-bar .bar-slider');
+        sounds_ids[index] = new Howl({
+            src: [podcast_ids[index].dataset.url],
+            html5: true,
+            volume: 0.5,
+            onend: function () {
+                'use strict';
+                player_pause(play_btn, pause_btn, sounds_ids[index]);
+            },
+            onload: function () {
+                'use strict';
+                podcast_ids[index].querySelector('.play-bar .duration').textContent = formatTime(sounds_ids[index].duration());
+            },
+            onplay: function () {
+                'use strict';
+                requestAnimationFrame(animate_bar.bind(this));
+            },
+        });
+
+        play_btn.addEventListener('click', () => {
+            'use strict';
+            // for (let podcast = 0; podcast < podcast_ids.length; podcast++) {
+            //     const play_button = podcast_ids[podcast].querySelector('.player-btn .play'),
+            //         paue_button = podcast_ids[podcast].querySelector('.player-btn .pause');
+            //     if (sounds_ids[index].playing()) {
+            //         if (!play_button.classList.contains('active')) {
+            //             paue_button.classList.remove('active');
+            //             play_button.classList.add('active');
+            //         }
+            //         sounds_ids[index].stop();
+            //     }
+            //     // if (!play_button.classList.contains('active')) {
+            //     //     paue_button.classList.remove('active');
+            //     //     play_button.classList.add('active');
+            //     // }
+            //     // console.log(sounds_ids[index].playing());
+            // }
+            player_pause(play_btn, pause_btn, sounds_ids[index]);
+        });
+        volume_input.addEventListener('input', () => {
+            'use strict';
+            volume_label.dataset.tooltip = volume_input.value + '%';
+            sounds_ids[index].volume(volume_input.value / 100);
+        });
+        function animate_bar () {
+            'use strict';
+            let seek = sounds_ids[index].seek(), 
+                inner_progress_bar = podcast_ids[index].querySelector('.play-bar .bar.bar-slider .bar-item'); 
+
+            podcast_ids[index].querySelector('.play-bar .seek').textContent = formatTime(seek);
+
+            inner_progress_bar.style.width = (((seek / this.duration()) * 100) || 0) + '%';
+
+            progress_bar.dataset.tooltip = Math.round(((seek / this.duration()) * 100) || 0 ) + '%';
+
+            if (this.playing()) {
+                requestAnimationFrame(animate_bar.bind(this));
+            }
+        }
+    }
+}
+
+function player_pause(play_btn, pause_btn, sound_id) {
     'use strict';
-    const sound_id = new Howl({
-        src: ['../../music/6.mp3'],
-        html5: true,
-        onplay: function(){
-            console.log('played');
-        },
-        onpause: function(){
-            console.log('pasuse');
-        },
-        onstop: function(){
-            console.log('stop');
-        },
-        onend: function () {
-            console.log('Finished!');
-        },
-        onloaderror: function() {
-            console.error('File cant load')
-        },
-    });
+    if (play_btn.classList.contains('active')) {
+        play_btn.classList.remove('active');
+        pause_btn.classList.add('active');
+        sound_id.play();
+    } else {
+        pause_btn.classList.remove('active');
+        play_btn.classList.add('active');
+        sound_id.pause();
+    }
+}
 
-    sound_id.play();
-    sound_id.fade(1, 0, 1000, sound_id);
-};
+/**
+ * Format the time from seconds to M:SS.
+ * @param  {Number} secs Seconds to format.
+ * @return {String}      Formatted time.
+ */
+function formatTime(secs) {
+    'use strict';
+    const minutes = Math.floor(secs / 60) || 0,
+        seconds = Math.round(secs - (minutes * 60)) || 0;
+    return minutes + ':' + (seconds < 10 ? '0' : '') + seconds;
+}
 
 // Show current year on footer
 current_year.textContent = new Date().getFullYear().toString();
@@ -121,13 +196,13 @@ current_year.textContent = new Date().getFullYear().toString();
 //     $("#loading").delay(100).fadeOut("slow");
 // });
 
-window.addEventListener('load', (event) => {
-    console.log('loading');
-});
+// window.addEventListener('load', (event) => {
+//     console.log('loading');
+// });
 
-document.addEventListener('DOMContentLoaded', (event) => {
-    console.log('done');
-});
+// document.addEventListener('DOMContentLoaded', (event) => {
+//     console.log('done');
+// });
 
 // const second = 1000,
 //     minute = second * 60,
