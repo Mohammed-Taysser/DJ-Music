@@ -1,0 +1,70 @@
+header {
+  background-image: url("../images/header.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .overlay {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #f1f1f1e6;
+  }
+  .real-header {
+    transform: translateY(-50%) translateX(-50%);
+    top: 50%;
+    width: 85%;
+    left: 50%;
+
+    svg.bi-heart-fill {
+      color: $main-bg;
+      animation: pulse 1.7s ease-in-out infinite;
+      // color: #e31b23;
+      transition: all ease-in-out 0.7s;
+    }
+  }
+
+  /* ---------- angle-down ---------*/
+  .angle-down {
+    right: 48%;
+    bottom: 30px;
+    transition: all 0.5s ease-in-out;
+    animation: top-bottom 2s infinite alternate-reverse;
+  }
+  @keyframes top-bottom {
+    0% {
+      bottom: 20px;
+    }
+    // 25% {
+    //   bottom: 30px;
+    // }
+    50% {
+      bottom: 35px;
+    }
+    // 75% {
+    //   bottom: 30px;
+    // }
+    100% {
+      bottom: 20px;
+    }
+  }
+}
+
+.upcoming-events {
+  position: relative;
+  &::before {
+    content: "";
+    display: block;
+    width: 80%;
+    height: 3px;
+    background-color: #f2f2f2;
+    top: 50%;
+    position: absolute;
+    z-index: -1;
+    right: 30px;
+  }
+}

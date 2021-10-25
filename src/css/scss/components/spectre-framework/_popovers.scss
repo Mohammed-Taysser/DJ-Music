@@ -1,0 +1,88 @@
+/*
+<div class="popover popover-right">
+  <button class="btn btn-primary">right popover</button>
+  <div class="popover-container">
+    <div class="card">
+      <div class="card-header">
+        ...
+      </div>
+      <div class="card-body">
+        ...
+      </div>
+      <div class="card-footer">
+        ...
+      </div>
+    </div>
+  </div>
+</div>
+*/
+
+.popover {
+  display: inline-block;
+  position: relative;
+
+  .popover-container {
+    left: 50%;
+    opacity: 0;
+    padding: 0.4rem;
+    position: absolute;
+    top: 0;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.2s;
+    width: 320px;
+    z-index: 300;
+  }
+
+  *:focus +,
+  &:hover {
+    .popover-container {
+      display: block;
+      opacity: 1;
+      transform: translate(-50%, -100%) scale(1);
+    }
+  }
+
+  &.popover-right {
+    .popover-container {
+      left: 100%;
+      top: 50%;
+    }
+    *:focus +,
+    &:hover {
+      .popover-container {
+        transform: translate(0, -50%) scale(1);
+      }
+    }
+  }
+
+  &.popover-bottom {
+    .popover-container {
+      left: 50%;
+      top: 100%;
+    }
+    *:focus +,
+    &:hover {
+      .popover-container {
+        transform: translate(-50%, 0) scale(1);
+      }
+    }
+  }
+
+  &.popover-left {
+    .popover-container {
+      left: 0;
+      top: 50%;
+    }
+    *:focus +,
+    &:hover {
+      .popover-container {
+        transform: translate(-100%, -50%) scale(1);
+      }
+    }
+  }
+
+  .card {
+    border: 0;
+    box-shadow: 0 0.2rem 0.5rem rgba(48, 55, 66, 0.3);
+  }
+}

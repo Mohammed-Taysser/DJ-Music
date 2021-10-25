@@ -1,0 +1,94 @@
+// Typography
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: inherit;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 0.5em;
+  margin-top: 0;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-weight: 500;
+}
+
+.h1,
+h1 {
+  font-size: 2rem;
+}
+
+.h2,
+h2 {
+  font-size: 1.6rem;
+}
+
+.h3,
+h3 {
+  font-size: 1.4rem;
+}
+
+.h4,
+h4 {
+  font-size: 1.2rem;
+}
+
+.h5,
+h5 {
+  font-size: 1rem;
+}
+
+.h6,
+h6 {
+  font-size: 0.8rem;
+}
+
+/*
+<pre class="code" data-lang="HTML"><code><span class="com">&lt;!-- code snippets --&gt;</span>
+&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn&quot;</span>&gt;
+  Submit
+&lt;<span class="tag">/button</span>&gt;
+</code></pre>
+*/
+code {
+  background: #fcf2f2;
+  border-radius: 0.1rem;
+  color: #d73e48;
+  font-size: 85%;
+  line-height: 1.25;
+  padding: 0.1rem 0.2rem;
+}
+
+.code {
+  border-radius: 0.1rem;
+  color: #3b4351;
+  position: relative;
+
+  &::before {
+    color: #bcc3ce;
+    content: attr(data-lang);
+    font-size: 0.7rem;
+    position: absolute;
+    right: 0.4rem;
+    top: 0.1rem;
+  }
+
+  code {
+    background: #f7f8f9;
+    color: inherit;
+    display: block;
+    line-height: 1.5;
+    overflow-x: auto;
+    padding: 1rem;
+    width: 100%;
+  }
+}

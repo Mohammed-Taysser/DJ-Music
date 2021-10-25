@@ -1,0 +1,51 @@
+/*  footer start */
+footer {
+  background-color: $main-bg;
+  &.skew-divider-top:before {
+    background-color: $main-bg;
+  }
+  a.text-hover {
+    padding: 5px 10px;
+    margin: 5px;
+    &::after,
+    &::before {
+      background-color: #fff;
+      width: 2px;
+    }
+    &:hover::before,
+    &:focus::before,
+    &:hover::after,
+    &:focus::after {
+      background-color: #fff;
+    }
+  }
+  .copyRight .content {
+    svg.bi-heart-fill {
+      animation: pulse 1.7s ease-in-out infinite;
+      // color: #e31b23;
+      transition: all ease-in-out 0.7s;
+    }
+    svg.bi-cup-fill {
+      transition: all ease-in-out 0.7s;
+      color: #ffc107;
+      animation: steam 1.7s ease-in-out infinite;
+    }
+  }
+}
+.contact-form {
+  .form-control {
+    display: inline-block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    outline: none;
+    background-color: #fff;
+    border: none;
+  }
+}
+
+
+/*  footer end */

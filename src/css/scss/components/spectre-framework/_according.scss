@@ -1,0 +1,39 @@
+/*<div class="accordion">
+  <input id="accordion-1" type="radio" name="accordion-radio" checked="" hidden="">
+  <label class="accordion-header" for="accordion-1">Elements</label>
+  <div class="accordion-body">
+    <!-- anything -->
+  </div>
+</div>
+<div class="accordion">
+  <input id="accordion-2" type="radio" name="accordion-radio" hidden="">
+  <label class="accordion-header" for="accordion-2">Components</label>
+  <div class="accordion-body">
+    <!-- anything -->
+  </div>
+</div>
+*/
+.accordion {
+  input:checked ~ .accordion-header > .icon,
+  &[open] .accordion-header > .icon {
+    transform: rotate(90deg);
+  }
+  input:checked ~ .accordion-body,
+  &[open] .accordion-body {
+    max-height: 50rem;
+  }
+
+  .accordion-header {
+    display: block;
+    padding: 0.2rem 0.4rem;
+    .icon {
+      transition: transform 0.25s;
+    }
+  }
+  .accordion-body {
+    margin-bottom: 0.4rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.25s;
+  }
+}

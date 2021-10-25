@@ -1,0 +1,68 @@
+/*
+<!-- divider element -->
+<div class="divider"></div>
+<!-- divider element with text -->
+<div class="divider text-center" data-content="OR"></div>
+
+<!-- vertical divider element with text -->
+<div class="columns">
+  <div class="column">
+    <!-- column content -->
+  </div>
+  <div class="divider-vert" data-content="OR"></div>
+  <div class="column">
+    <!-- column content -->
+  </div>
+</div>
+*/
+
+.divider,
+.divider-vert {
+  display: block;
+  position: relative;
+
+  &[data-content]::after,
+  &[data-content]::after {
+    background: #fff;
+    color: #bcc3ce;
+    content: attr(data-content);
+    display: inline-block;
+    font-size: 0.7rem;
+    padding: 0 0.4rem;
+    transform: translateY(-0.65rem);
+  }
+}
+
+.divider {
+  border-top: 0.05rem solid #f1f3f5;
+  height: 0.05rem;
+  margin: 0.4rem 0;
+
+  &[data-content] {
+    margin: 0.8rem 0;
+  }
+}
+
+.divider-vert {
+  display: block;
+  padding: 0.8rem;
+
+  &::before {
+    border-left: 0.05rem solid #dadee4;
+    bottom: 0.4rem;
+    content: "";
+    display: block;
+    left: 50%;
+    position: absolute;
+    top: 0.4rem;
+    transform: translateX(-50%);
+  }
+
+  &[data-content]::after {
+    left: 50%;
+    padding: 0.2rem 0;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

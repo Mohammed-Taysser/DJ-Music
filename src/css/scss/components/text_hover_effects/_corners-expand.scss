@@ -1,0 +1,23 @@
+@import "base/imports";
+
+.#{$name-of-the-class} {
+  @include transition-options;
+}
+
+/* CORNERS EXPAND */
+.#{$name-of-the-class}-ce-bottom-left {
+    @include ce-bottom-left;
+  }
+  
+  .#{$name-of-the-class}-ce-bottom-right {
+    @include ce-bottom-right;
+  }
+  
+  .#{$name-of-the-class}-ce-top-left {
+    @include ce-top-left;
+  }
+  
+  .#{$name-of-the-class}-ce-top-right {
+    @include ce-top-right;
+  }
+  

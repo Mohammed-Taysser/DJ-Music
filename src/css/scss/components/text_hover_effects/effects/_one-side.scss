@@ -1,0 +1,45 @@
+@mixin left-goes-down {
+  @include line-options(
+    after,
+    $transition-property: height,
+    $value-of-transitioned-property: $max-value-of-transitioned-property
+  );
+
+  &:after {
+    top: 0%;
+    left: 0%;
+  }
+}
+@mixin left-goes-up {
+  @include line-options(
+    after,
+    $transition-property: height,
+    $value-of-transitioned-property: $max-value-of-transitioned-property
+  );
+  &:after {
+    bottom: 0%;
+    left: 0%;
+  }
+}
+@mixin right-goes-down {
+  @include line-options(
+    after,
+    $transition-property: height,
+    $value-of-transitioned-property: $max-value-of-transitioned-property
+  );
+  &:after {
+    top: 0%;
+    right: 0%;
+  }
+}
+@mixin right-goes-up {
+  @include line-options(
+    after,
+    $transition-property: height,
+    $value-of-transitioned-property: $max-value-of-transitioned-property
+  );
+  &:after {
+    bottom: 0%;
+    right: 0%;
+  }
+}

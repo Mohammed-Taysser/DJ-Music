@@ -1,0 +1,40 @@
+
+
+/*
+<figure class="figure">
+  <img class="img-responsive ..." src="img/osx-yosemite-2.jpg" alt="macOS Yosemite Wallpaper">
+  <figcaption class="figure-caption text-center">macOS Yosemite wallpaper</figcaption>
+</figure>
+*/
+
+
+.figure {
+  margin: 0 0 .4rem 0;
+.figure-caption {
+  color: #66758c;
+  margin-top: .4rem;
+}
+}
+
+
+.img-fluid {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+.img-fit-cover {
+  object-fit: cover;
+}
+
+.img-fit-contain {
+  object-fit: contain;
+}
+.img-thumbnail {
+  padding: 0.25rem;
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: 0.25rem;
+  max-width: 100%;
+  height: auto;
+}

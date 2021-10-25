@@ -1,0 +1,23 @@
+@import "base/imports";
+
+.#{$name-of-the-class} {
+  @include transition-options;
+}
+
+/* one side */
+
+.#{$name-of-the-class}-left-goes-down {
+    @include left-goes-down;
+  }
+  
+  .#{$name-of-the-class}-left-goes-up {
+    @include left-goes-up;
+  }
+  
+  .#{$name-of-the-class}-right-goes-up {
+    @include right-goes-up;
+  }
+  
+  .#{$name-of-the-class}-right-goes-down {
+    @include right-goes-down;
+  }

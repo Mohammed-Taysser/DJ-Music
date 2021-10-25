@@ -1,0 +1,79 @@
+/*
+<ul class="menu">
+  <li class="divider" data-content="LINKS"></li>
+  <li class="menu-item"><a href="#menus">Slack</a></li>
+  <li class="menu-item"><a href="#menus">Hipchat</a></li>
+  <li class="menu-item"><a href="#menus">Skype</a></li>
+  <li class="divider" data-content="ar"></li>
+  </ul>
+*/
+
+.menu {
+  background: #fff;
+  border-radius: 0.1rem;
+  box-shadow: 0 0.05rem 0.2rem rgba(48, 55, 66, 0.3);
+  list-style: none;
+  margin: 0;
+  min-width: 180px;
+  padding: 0.4rem;
+  transform: translateY(0.2rem);
+  z-index: 300;
+
+  &menu-nav {
+    background: transparent;
+    box-shadow: none;
+  }
+
+  .menu-item {
+    margin-top: 0;
+    padding: 0 0.4rem;
+    position: relative;
+    text-decoration: none;
+
+    > a {
+      border-radius: 0.1rem;
+      color: inherit;
+      display: block;
+      margin: 0 -0.4rem;
+      padding: 0.2rem 0.4rem;
+      text-decoration: none;
+    }
+
+    > a:focus,
+    > a:hover {
+      background: #f1f1fc;
+      color: #5755d9;
+    }
+
+    > a:active,
+    > a.active {
+      background: #f1f1fc;
+      color: #5755d9;
+    }
+
+    .form-checkbox,
+    .form-radio,
+    .form-switch {
+      margin: 0.1rem 0;
+    }
+
+    + & {
+      margin-top: 0.2rem;
+    }
+  }
+
+  .menu-badge {
+    align-items: center;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    .label {
+      margin-right: 0.4rem;
+    }
+  }
+}

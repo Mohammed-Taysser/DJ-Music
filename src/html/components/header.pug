@@ -1,0 +1,45 @@
+.header.py-5.skew-divider-img
+    .container.py-5
+        h2.my-3.font-weight-bold Better Healthcare for a Better Life
+        h3.my-3.text-decoration-none
+            | Book online or call 
+            span.text-danger.mx-1
+                svg.bi.bi-telephone-fill(xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='currentColor' viewbox='0 0 16 16')
+                    path(fill-rule='evenodd' d='M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z')
+            a.text-dark(href='tel:16676') 16676
+        form(action='search.html' method='get' class='mt-5')
+            .row.justify-content-center
+                .col-md-6.my-3.col-lg-4
+                    .input-search
+                        label.sr-only(for='doctor-name-search') Doctor Name
+                        input#doctor-name-search.form-control.form-control-lg(type='text' placeholder='Doctor Name' name='doctor_name' style='border-color: #e8e8e8')
+                .col-md-6.my-3.col-lg-4
+                    .select-city
+                        label.d-none(for='select-specialist')
+                        select#js-specialist-select.wide.js-select(name='specialist')
+                            option(value='3' disabled='' selected='') specialist select
+                            option(value='1') Some option
+                            option(value='2') Another option
+                            option(value='4') more option
+                .col-md-6.my-3.col-lg-4
+                    .select-city
+                        label.d-none(for='select-city')
+                        select#js-city-select.wide(name='city_select')
+                            option(value='3' disabled='' selected='') City Select
+                            option(value='1') Some option
+                            option(value='2') Another option
+                            option(value='4') more option
+                .col-md-6.my-3.col-lg-4
+                    .select-area
+                        label.d-none(for='select-area')
+                        select#js-area-select.wide.js-select(name='area_select')
+                            option(value='3' disabled='' selected='') Area Select
+                            option(value='1') Some option
+                            option(value='2') Another option
+                            option(value='4') more option
+                .col-md-6.my-3.col-lg-4
+                    .send-button
+                        button.btn.transition.btn-aurora.btn-lg.btn-block(type='submit')
+                            svg.bi.bi-search.position-relative.mr-1(xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='currentColor' style='top: -3px;' viewbox='0 0 16 16')
+                                path(d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z')
+                            |  Search
