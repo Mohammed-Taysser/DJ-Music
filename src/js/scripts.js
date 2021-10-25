@@ -77,11 +77,38 @@ function setWindowHeight() {
     hero_header_index_page.style.height = `${window_height - nav_height}px`;
 }
 
-if(hero_header_index_page){
+if (hero_header_index_page) {
     window.addEventListener('resize', setWindowHeight, false);
     setWindowHeight();
 }
 
+// music player 'howler'
+
+document.getElementById('js-music-player').onclick = function () {
+    'use strict';
+    const sound_id = new Howl({
+        src: ['../../music/6.mp3'],
+        html5: true,
+        onplay: function(){
+            console.log('played');
+        },
+        onpause: function(){
+            console.log('pasuse');
+        },
+        onstop: function(){
+            console.log('stop');
+        },
+        onend: function () {
+            console.log('Finished!');
+        },
+        onloaderror: function() {
+            console.error('File cant load')
+        },
+    });
+
+    sound_id.play();
+    sound_id.fade(1, 0, 1000, sound_id);
+};
 
 // Show current year on footer
 current_year.textContent = new Date().getFullYear().toString();
@@ -99,7 +126,7 @@ window.addEventListener('load', (event) => {
 });
 
 document.addEventListener('DOMContentLoaded', (event) => {
-   console.log('done');
+    console.log('done');
 });
 
 // const second = 1000,
