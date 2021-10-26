@@ -98,12 +98,13 @@ if (hero_header_index_page) {
 if (podcast_ids) {
     const sounds_ids = [];
 
-    for (let index = 0; index < podcast_ids.length; index++) {
+    for (let index = 0; index < podcast_ids.length; index ++) {
         const play_btn = podcast_ids[index].querySelector('.player-btn .play'),
             pause_btn = podcast_ids[index].querySelector('.player-btn .pause'),
             volume_input = podcast_ids[index].querySelector('.sound-controller .volume-changer'),
             volume_label = podcast_ids[index].querySelector('.sound-controller .volume-label'),
-            progress_bar = podcast_ids[index].querySelector('.play-bar .bar-slider');
+            progress_bar = podcast_ids[index].querySelector('.play-bar .bar-slider'),
+            volume_size = podcast_ids[index].querySelector('.sound-controller .volume-size');
         sounds_ids[index] = new Howl({
             src: [podcast_ids[index].dataset.url],
             html5: true,
@@ -144,7 +145,7 @@ if (podcast_ids) {
         });
         volume_input.addEventListener('input', () => {
             'use strict';
-            volume_label.dataset.tooltip = volume_input.value + '%';
+            volume_label.dataset.tooltip = volume_size.textContent = volume_input.value + '%';
             sounds_ids[index].volume(volume_input.value / 100);
         });
         function animate_bar() {
