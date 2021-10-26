@@ -322,7 +322,7 @@ header {
   background-image: url("../images/color-full.jpg");
   background-position: center;
   background-size: cover;
-  height: 530px;
+  height: 500px;
   .overlay{
     background-color: #f1f1f13d;
   }
@@ -338,4 +338,5 @@ header {
 .works .oldWorks .work:nth-child(1),
 .works .oldWorks .work:nth-child(4) {
   background-color: #f2f2f2;
+  height: 250px;
 }
