@@ -1,0 +1,30 @@
+.statistical {
+    .overlay{
+        background-color: #f1f1f18c;
+    }
+  .bar {
+    background-color: #d9d6d6;
+  }
+  .bar-slider {
+    .bar-item {
+      background-color: $main-bg;
+    }
+    .bar-slider-btn {
+      background: $main-bg;
+      border: 0;
+      border-radius: 50%;
+      height: 0.6rem;
+      padding: 0;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translate(50%, -50%);
+      width: 0.6rem;
+    }
+  }
+  .tooltip::after,
+  .tooltip::after {
+    opacity: 1;
+    transform: translate(-50%, -0.2rem);
+  }
+}

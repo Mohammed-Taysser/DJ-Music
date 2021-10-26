@@ -1,0 +1,49 @@
+extends ../layouts/layout
+
+block title 
+	title About Us
+
+block style 
+	link(rel="stylesheet", href="../css/about-us.min.css")
+
+block content 
+
+	.page-path
+		.container.mt-4.text-muted 
+			svg.bi.mr-2.bi-house(xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='currentColor' viewbox='0 0 16 16')
+				path(fill-rule='evenodd' d='M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z')
+				path(fill-rule='evenodd' d='M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z')
+			| home | 
+			| about
+																			
+	section.statistical.py-5.my-5
+		.container 
+			.row.mx-0.my-0
+				.col-lg-6.mx-0.p-0
+					.skillsContent.p-3.h-100(style='background-color:#f2f2f2;')
+						h2.mt-5.mb-3 DJ&rsquo;s skill
+						p.mt-3.mb-5.text-muted
+							| DJ Rain-flow knows how to move your mind, body and soul by delivering tracks that stand out from the norm.
+						.skill-bar-item.my-4
+							p Perform
+							.bar.bar-slider.bar-sm
+								.bar-item(role='progressbar' style='width:95%;')
+									button.tooltip.bar-slider-btn.bg-aurora(role='slider' data-tooltip='95%')
+
+						.skill-bar-item.my-4
+							p Use Midi
+							.bar.bar-slider.bar-sm
+								.bar-item(role='progressbar' style='width:90%;')
+									button.tooltip.bar-slider-btn.bg-aurora(role='slider' data-tooltip='90%')
+						.skill-bar-item.my-4
+							p Remix and mash up
+							.bar.bar-slider.bar-sm
+								.bar-item(role='progressbar' style='width:85%;')
+									button.tooltip.bar-slider-btn.bg-aurora(role='slider' data-tooltip='85%')
+				.col-lg-6.text-center(style='height:450px;').mx-0.p-0
+					.img.position-relative.h-100(style='background: url("../images/about.jpg");background-size: cover;background-repeat: no-repeat;background-position: center;')
+						.overlay 
+						.player.position-absolute(style='top:45%;left:45%;')
+							a(href='#')
+								svg.icon(xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi) bi-play-fill" viewBox="0 0 16 16")
+									path( d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z")
