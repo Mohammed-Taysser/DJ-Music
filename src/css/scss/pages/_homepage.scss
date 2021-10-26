@@ -121,23 +121,7 @@ header {
   }
 }
 
-.background-text {
-  font-size: 2.7em;
-  font-weight: bold;
-  position: relative;
-}
 
-.background-text::before {
-  font-family: "Kaushan Script", cursive;
-  position: absolute;
-  font-size: 1.5em;
-  font-weight: normal;
-  color: #f2f2f2;
-  top: -16px;
-  left: 0;
-  width: 100%;
-  z-index: -1;
-}
 
 .about-me {
   .background-text {
