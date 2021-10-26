@@ -23,7 +23,11 @@ const close_button = document.getElementById('js-menu-toggle'),
     header_angle_down = document.querySelector('header .angle-down '),
     hero_header_index_page = document.getElementById('js-header'),
     podcast_ids = document.querySelectorAll('.single-music-container'),
-    podcast_container = document.getElementById('js-simple-bar-scroll');
+    podcast_container = document.getElementById('js-simple-bar-scroll'),
+    festival_days = document.getElementById('js-days'),
+    festival_hours = document.getElementById('js-hours'),
+    festival_minutes = document.getElementById('js-minutes'),
+    festival_seconds = document.getElementById('js-seconds');
 
 // Toggle menu on navbar
 
@@ -64,9 +68,10 @@ if (header_angle_down) {
 
 // Podcast Slider
 
-if(podcast_container){
+if (podcast_container) {
     new SimpleBar(podcast_container);
 }
+
 // Glide slider
 
 array_of_slider_id.forEach(slider_id => {
@@ -142,16 +147,16 @@ if (podcast_ids) {
             volume_label.dataset.tooltip = volume_input.value + '%';
             sounds_ids[index].volume(volume_input.value / 100);
         });
-        function animate_bar () {
+        function animate_bar() {
             'use strict';
-            let seek = sounds_ids[index].seek(), 
-                inner_progress_bar = podcast_ids[index].querySelector('.play-bar .bar.bar-slider .bar-item'); 
+            let seek = sounds_ids[index].seek(),
+                inner_progress_bar = podcast_ids[index].querySelector('.play-bar .bar.bar-slider .bar-item');
 
             podcast_ids[index].querySelector('.play-bar .seek').textContent = formatTime(seek);
 
             inner_progress_bar.style.width = (((seek / this.duration()) * 100) || 0) + '%';
 
-            progress_bar.dataset.tooltip = Math.round(((seek / this.duration()) * 100) || 0 ) + '%';
+            progress_bar.dataset.tooltip = Math.round(((seek / this.duration()) * 100) || 0) + '%';
 
             if (this.playing()) {
                 requestAnimationFrame(animate_bar.bind(this));
@@ -204,23 +209,31 @@ current_year.textContent = new Date().getFullYear().toString();
 //     console.log('done');
 // });
 
-// const second = 1000,
-//     minute = second * 60,
-//     hour = minute * 60,
-//     day = hour * 24;
-// let countDown = new Date('13 nov 2022 00:00:00').getTime(),
-//     x = setInterval(function () {
-//         'use strict';
-//         let now = new Date().getTime(),
-//             distance = countDown - now;
-//         document.getElementById('days').textContent = Math.floor(distance / (day)),
-//             document.getElementById('hours').textContent = Math.floor((distance % (day)) / (hour)),
-//             document.getElementById('minutes').textContent = Math.floor((distance % (hour)) / (minute)),
-//             document.getElementById('seconds').textContent = Math.floor((distance % (minute)) / second);
 
-//         //do something later when date is reached
-//         if (distance < 0) {
-//             clearInterval(x);
-//             //'IT'S MY BIRTHDAY!;
-//         }
-//     }, second);
+if (festival_days
+    && festival_hours
+    && festival_minutes
+    && festival_seconds) {
+    let countDown = new Date('13 nov 2022 00:00:00').getTime(),
+        count_down_interval = setInterval(function () {
+            'use strict';
+            const now = new Date().getTime(),
+                distance = countDown - now,
+                second = 1000,
+                minute = second * 60,
+                hour = minute * 60,
+                day = hour * 24;
+
+            festival_days.textContent = Math.floor(distance / (day));
+            festival_hours.textContent = Math.floor((distance % (day)) / (hour));
+            festival_minutes.textContent = Math.floor((distance % (hour)) / (minute));
+            festival_seconds.textContent = Math.floor((distance % (minute)) / second);
+
+            //Do something later when date is reached
+            if (distance < 0) {
+                // clearInterval(count_down_interval);
+                countDown = new Date('13 nov 2025 00:00:00').getTime();
+            }
+        }, 1000);
+
+}
