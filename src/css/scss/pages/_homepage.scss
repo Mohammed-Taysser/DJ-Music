@@ -59,6 +59,68 @@ header {
   }
 }
 
+.offers {
+  .event-time {
+    width: 200px;
+    border: #fff 2px solid;
+    position: absolute;
+    text-align: center;
+    top: 20px;
+    right: -50px;
+    transform: rotate(45deg);
+    font-weight: bold;
+
+    .ribbon-wrapper {
+      position: relative;
+      z-index: 10;
+    }
+    .ribbon-front {
+      padding: 15px;
+      height: 100%;
+      width: 100%;
+      position: relative;
+      z-index: 2;
+      color: #fff;
+      text-align: center;
+    }
+    .glow {
+      width: 40px;
+      height: 100%;
+      z-index: 999;
+      position: absolute;
+      animation: flow 3s linear infinite;
+      transform: skew(45deg);
+      background: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0) 1%,
+        rgba(255, 255, 255, 1) 100%
+      );
+      -webkit-animation: flow 3s linear infinite;
+      -webkit-transform: skew(45deg);
+      -moz-transform: skew(45deg);
+      -ms-transform: skew(45deg);
+      -o-transform: skew(45deg);
+    }
+  }
+  @keyframes flow {
+    0% {
+      left: -20%;
+      opacity: 0;
+    }
+
+    50% {
+      left: 50%;
+      opacity: 0.5;
+    }
+
+    100% {
+      left: 100%;
+      opacity: 0;
+    }
+  }
+}
+
 .background-text {
   font-size: 2.7em;
   font-weight: bold;
