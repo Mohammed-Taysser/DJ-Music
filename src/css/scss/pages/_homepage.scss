@@ -323,13 +323,13 @@ header {
   background-position: center;
   background-size: cover;
   height: 500px;
-  .overlay{
+  .overlay {
     background-color: #f1f1f13d;
   }
   .player {
     top: 50%;
     background-color: $main-bg;
-    .icon{
+    .icon {
       color: #fff;
     }
   }
@@ -339,4 +339,35 @@ header {
 .works .oldWorks .work:nth-child(4) {
   background-color: #f2f2f2;
   height: 250px;
+}
+
+.youtube {
+
+  .background-text {
+    &::before {
+      content: "Youtube feed";
+    }
+  }
+  .work {
+    transition: all .5s ease-in-out;
+    .overlay{
+      background: #f1f1f166;
+    }
+  }
+
+
+  .work .player {
+    position: absolute;
+    left: 0;
+    bottom: 50%;
+    right: 0;
+    border-color: #fff;
+    background-color: $main-bg;
+    .icon{
+      color: #fff;
+    }
+  }
+  .work:hover {
+    box-shadow: 0px 3px 15px rgba(22, 41, 124, 0.1);
+  }
 }
