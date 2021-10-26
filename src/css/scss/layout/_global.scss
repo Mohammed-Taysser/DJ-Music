@@ -52,6 +52,7 @@ body {
   color: #f2f2f2;
   top: -16px;
   left: 0;
+  content: attr(data-text);
   width: 100%;
   z-index: -1;
 }

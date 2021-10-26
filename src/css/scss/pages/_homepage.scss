@@ -124,12 +124,6 @@ header {
 
 
 .about-me {
-  .background-text {
-    &::before {
-      content: "About Mi";
-    }
-  }
-
   .img img {
     animation: border-transform 10s linear infinite alternate forwards;
   }
@@ -388,11 +382,6 @@ header {
 }
 
 .youtube {
-  .background-text {
-    &::before {
-      content: "Youtube feed";
-    }
-  }
   .work {
     transition: all 0.5s ease-in-out;
     .overlay {

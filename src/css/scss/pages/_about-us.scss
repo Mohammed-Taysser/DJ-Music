@@ -30,24 +30,12 @@
 }
 
 .about-me {
-  .background-text {
-    &::before {
-      content: "About Mi";
-    }
-  }
-
   .img img {
     animation: border-transform 10s linear infinite alternate forwards;
   }
 }
 
 .our-works {
-  .background-text {
-    &::before {
-      content: "Our Portfolio";
-    }
-  }
-
   .img img {
     transition: all 0.5s;
   }
@@ -57,12 +45,6 @@
 }
 
 .places {
-  .background-text {
-    &::before {
-      content: "Best Service";
-    }
-  }
-
   .place {
     transition: all 0.5s ease-in-out;
 
