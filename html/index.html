@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="multi page design as first project">
+    <meta name="keywords" content="HTML, CSS, JavaScript, bootstrap, dj, music, gulp, scss, sass, pug">
+    <meta name="author" content="Mohammed Taysser">
+    <link rel="stylesheet" href="../css/core.min.css">
+    <link rel="stylesheet" href="../css/home.min.css">
+    <link rel="icon" href="../images/favicon.png" type="image/png">
+    <title>Home</title>
+  </head>
+  <body> 
+    <nav class="py-3 position-relative">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center"><a class="brand text-light text-decoration-none" href="index.html">
+            <svg class="bi bi-tsunami" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M.036 12.314a.5.5 0 0 1 .65-.278l1.757.703a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.757-.703a.5.5 0 1 1 .372.928l-1.758.703a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0l-1.757-.703a.5.5 0 0 1-.278-.65zm0 2a.5.5 0 0 1 .65-.278l1.757.703a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.757-.703a.5.5 0 1 1 .372.928l-1.758.703a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0l-1.757-.703a.5.5 0 0 1-.278-.65zM2.662 8.08c-.456 1.063-.994 2.098-1.842 2.804a.5.5 0 0 1-.64-.768c.652-.544 1.114-1.384 1.564-2.43.14-.328.281-.68.427-1.044.302-.754.624-1.559 1.01-2.308C3.763 3.2 4.528 2.105 5.7 1.299 6.877.49 8.418 0 10.5 0c1.463 0 2.511.4 3.179 1.058.67.66.893 1.518.819 2.302-.074.771-.441 1.516-1.02 1.965a1.878 1.878 0 0 1-1.904.27c-.65.642-.907 1.679-.71 2.614C11.076 9.215 11.784 10 13 10h2.5a.5.5 0 0 1 0 1H13c-1.784 0-2.826-1.215-3.114-2.585-.232-1.1.005-2.373.758-3.284L10.5 5.06l-.777.388a.5.5 0 0 1-.447 0l-1-.5a.5.5 0 0 1 .447-.894l.777.388.776-.388a.5.5 0 0 1 .447 0l1 .5a.493.493 0 0 1 .034.018c.44.264.81.195 1.108-.036.328-.255.586-.729.637-1.27.05-.529-.1-1.076-.525-1.495-.426-.42-1.19-.77-2.477-.77-1.918 0-3.252.448-4.232 1.123C5.283 2.8 4.61 3.738 4.07 4.79c-.365.71-.655 1.433-.945 2.16-.15.376-.301.753-.463 1.13z"></path>
+            </svg>DJ</a>
+          <div class="menu-toggle d-md-none" id="js-menu-toggle">
+            <div class="hamburger"><span></span><span></span><span></span></div>
+            <div class="cross"><span></span><span></span></div>
+          </div>
+          <div class="main-links" id="main-links">
+            <ul class="list-unstyled m-0">
+              <li class="custom-nav-link active"><a class="text-light text-hover text-hover-move-horizontal nav-link" href="discover.html">discover</a></li>
+              <li class="custom-nav-link"><a class="text-light text-hover text-hover-move-horizontal nav-link" href="tour.html">tour</a></li>
+              <li class="custom-nav-link"><a class="text-light text-hover text-hover-move-horizontal nav-link" href="blog.html">blogs</a></li>
+              <li class="custom-nav-link"><a class="text-light text-hover text-hover-move-horizontal nav-link" href="contact-us.html">contact us</a></li>
+              <li class="custom-nav-link"><a class="text-light text-hover text-hover-move-horizontal nav-link" href="about-us.html">about us</a></li>
+              <li class="custom-nav-link"><a class="text-light text-hover text-hover-move-horizontal nav-link" href="blog-details.html">blog details</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <header class="position-relative" id="js-header">
+      <div class="overlay"> </div>
+      <div class="real-header position-absolute">
+        <div class="container d-table h-100">
+          <div class="row d-table-cell h-100 position-relative" style="vertical-align: middle;">
+            <div class="col-md-6 mx-auto"></div>
+            <div class="content text-center">
+              <p class="font-weight-bold lead">new single</p>
+              <h1 class="my-4 py-3 font-weight-bold">Feel the  <span class="icon tooltip" data-tooltip="Heart"> 
+                  <svg class="bi bi-heart-fill mx-2" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" viewbox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"> </path>
+                  </svg></span> beats</h1>
+              <p>Building giants was a necessity for ancient humans. A human tribe was more than the sum of its parts, in physical power, in productivity, and in knowledge Given the powers of emergence,</p>
+              <div class="player"><a href="#">
+                  <svg class="icon bi) bi-play-fill" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"></path>
+                  </svg></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="angle-down position-absolute"> <a class="text-aurora transition" href="#UPCOMING">
+          <svg class="bi bi-chevron-double-down" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" viewbox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path>
+            <path fill-rule="evenodd" d="M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path>
+          </svg></a></div>
+    </header>
+    <div class="offers py-5 my-5">
+      <div class="container">
+        <h2 class="my-3 upcoming-events"><span class="font-weight-bold">upComing events</span></h2>
+        <div class="glide mt-5" id="js-up-coming-events">
+          <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+              <li class="glide__slide p-2">
+                <div class="bg-white nice-shadow rounded pb-3 text-muted">
+                  <div class="img rounded-top overflow-hidden position-relative" style="height:450px;background: url(&quot;../images/posts/post-1.jpg&quot;);background-size: cover;background-repeat: no-repeat;background-position: center;">
+                    <div class="event-time">
+                      <div class="ribbon-wrapper">
+                        <div class="glow"></div>
+                        <div class="ribbon-front">Dec 15 , 2020</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content px-2 text-center">
+                    <h4 class="my-3 font-weight-bold">Kimetsu no Yaiba</h4>
+                    <p class="m-0"><span class="text-muted">
+                        <svg class="text-aurora mr-2 bi bi-geo-alt" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewbox="0 0 16 16">
+                          <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"></path>
+                          <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"></path>
+                        </svg>Funkhaus Berlin, Germany</span></p>
+                    <button class="btn btn-aurora mt-3">Take The Deal
+                      <svg class="bi position-relative bi-cart" xmlns="http://www.w3.org/2000/svg" width="18" height="18" style="top: -2px;" fill="currentColor" viewbox="0 0 16 16">
+                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"></path>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </li>
+              <li class="glide__slide p-2">
+                <div class="bg-white nice-shadow rounded pb-3 text-muted">
+                  <div class="img rounded-top overflow-hidden position-relative" style="height:450px;background: url(&quot;../images/posts/post-2.jpeg&quot;);background-size: cover;background-repeat: no-repeat;background-position: center;">
+                    <div class="event-time">
+                      <div class="ribbon-wrapper">
+                        <div class="glow"></div>
+                        <div class="ribbon-front">jun 01 , 2010</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content px-2 text-center">
+                    <h4 class="my-3 font-weight-bold">attack on titian</h4>
+                    <p class="m-0"><span class="text-muted">
+                        <svg class="text-aurora mr-2 bi bi-geo-alt" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewbox="0 0 16 16">
+                          <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"></path>
+                          <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"></path>
+                        </svg>any time - any place</span></p>
+                    <button class="btn btn-aurora mt-3">Take The Deal
+                      <svg class="bi position-relative bi-cart" xmlns="http://www.w3.org/2000/svg" width="18" height="18" style="top: -2px;" fill="currentColor" viewbox="0 0 16 16">
+                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"></path>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </li>
+              <li class="glide__slide p-2">
+                <div class="bg-white nice-shadow rounded pb-3 text-muted">
+                  <div class="img rounded-top overflow-hidden position-relative" style="height:450px;background: url(&quot;../images/posts/post-3.png&quot;);background-size: cover;background-repeat: no-repeat;background-position: center;">
+                    <div class="event-time">
+                      <div class="ribbon-wrapper">
+                        <div class="glow"></div>
+                        <div class="ribbon-front">nov 05 , 2019</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content px-2 text-center">
+                    <h4 class="my-3 font-weight-bold">deice game</h4>
+                    <p class="m-0"><span class="text-muted">
+                        <svg class="text-aurora mr-2 bi bi-geo-alt" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewbox="0 0 16 16">
+                          <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"></path>
+                          <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"></path>
+                        </svg>Egypt, new-cairo, cairo</span></p>
+                    <button class="btn btn-aurora mt-3">Take The Deal
+                      <svg class="bi position-relative bi-cart" xmlns="http://www.w3.org/2000/svg" width="18" height="18" style="top: -2px;" fill="currentColor" viewbox="0 0 16 16">
+                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"></path>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </li>
+              <li class="glide__slide p-2">
+                <div class="bg-white nice-shadow rounded pb-3 text-muted">
+                  <div class="img rounded-top overflow-hidden position-relative" style="height:450px;background: url(&quot;../images/posts/post-4.jpg&quot;);background-size: cover;background-repeat: no-repeat;background-position: center;">
+                    <div class="event-time">
+                      <div class="ribbon-wrapper">
+                        <div class="glow"></div>
+                        <div class="ribbon-front">nov 05 , 2019</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content px-2 text-center">
+                    <h4 class="my-3 font-weight-bold">suer hero !</h4>
+                    <p class="m-0"><span class="text-muted">
+                        <svg class="text-aurora mr-2 bi bi-geo-alt" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewbox="0 0 16 16">
+                          <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"></path>
+                          <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"></path>
+                        </svg>news-land, hero academy</span></p>
+                    <button class="btn btn-aurora mt-3">Take The Deal
+                      <svg class="bi position-relative bi-cart" xmlns="http://www.w3.org/2000/svg" width="18" height="18" style="top: -2px;" fill="currentColor" viewbox="0 0 16 16">
+                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"></path>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="glide__arrows" data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--left" data-glide-dir="&lt;">
+              <svg class="bi bi-chevron-left" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"></path>
+              </svg>
+            </button>
+            <button class="glide__arrow glide__arrow--right" data-glide-dir="&gt;"> 
+              <svg class="bi bi-chevron-right" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="about-me my-5 py-5">
+      <div class="container">
+        <div class="row">
+          <div class="img col-md-5 align-self-center"><img class="img-fluid w-100" src="../images/my-photo.jpg" alt="it's my-photo"></div>
+          <div class="content col-md-7 align-self-center">
+            <h2 class="my-3 background-text" data-text="About Mi">Dr Strange</h2>
+            <p class="lead text-muted">I would lay down my life for two brothers or eight cousins.&rdquo;With that in mind, let&rsquo;s imagine a big extended family made up of 27 immediate families&mdash;the grandchildren and great-grandchildren of a single couple</p>
+            <button class="btn btn-aurora btn-lg">Contact Me</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="tracks">
+      <div class="container">
+        <h2 class="background-text my-3 d-flex justify-content-between align-items-center">
+           latest tracks 
+          <button class="btn btn-aurora">View all tracks</button>
+        </h2>
+        <div class="row">
+          <div class="col-lg-7 pr-0 my-5">
+            <div class="main-content rounded nice-shadow p-3" id="js-simple-bar-scroll"> 
+              <div class="single-music-container my-4" data-url="../../music/4.mp3">
+                <h4 class="text-muted my-2">happy upbeat background</h4>
+                <div class="d-flex justify-content-between align-items-center"> 
+                  <div class="player-btn col text-aurora position-relative">
+                    <div class="controller-container">
+                      <div class="pause">
+                        <div class="line line_1"></div>
+                        <div class="line line_2"></div>
+                      </div>
+                      <div class="play active">
+                        <div class="line line_1"></div>
+                        <div class="line line_2"></div>
+                        <div class="line line_3"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="play-bar col">
+                    <div class="time d-flex justify-content-between align-items-center text-muted small"> <span class="seek">00:00</span><span class="duration">01:12</span></div>
+                    <div class="bar bar-slider tooltip bar-sm mt-2 mb-3" data-tooltip="0%">
+                      <div class="bar-item" role="progressbar"></div>
+                    </div>
+                  </div>
+                  <div class="sound-controller col"><span class="text-muted small mute d-flex justify-content-between align-items-center"> 
+                      <svg class="bi bi-volume-up" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewbox="0 0 16 16">
+                        <path d="M11.536 14.01A8.473 8.473 0 0 0 14.026 8a8.473 8.473 0 0 0-2.49-6.01l-.708.707A7.476 7.476 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303l.708.707z"></path>
+                        <path d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.483 5.483 0 0 1 11.025 8a5.483 5.483 0 0 1-1.61 3.89l.706.706z"></path>
+                        <path d="M10.025 8a4.486 4.486 0 0 1-1.318 3.182L8 10.475A3.489 3.489 0 0 0 9.025 8c0-.966-.392-1.841-1.025-2.475l.707-.707A4.486 4.486 0 0 1 10.025 8zM7 4a.5.5 0 0 0-.812-.39L3.825 5.5H1.5A.5.5 0 0 0 1 6v4a.5.5 0 0 0 .5.5h2.325l2.363 1.89A.5.5 0 0 0 7 12V4zM4.312 6.39 6 5.04v5.92L4.312 9.61A.5.5 0 0 0 4 9.5H2v-3h2a.5.5 0 0 0 .312-.11z"></path>
+                      </svg><span class="volume-size">50%</span></span>
+                    <label class="volume-label m-0 tooltip" for="sound-slider" data-tooltip="50%">
+                      <input class="slider volume-changer" id="sound-slider" type="range" min="0" max="100" value="50" oninput="this.setAttribute('value', this.value);">
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="single-music-container my-4" data-url="../../music/1.mp3">
+                <h4 class="text-muted my-2">scissor seven</h4>
+                <div class="d-flex justify-content-between align-items-center"> 
+                  <div class="player-btn col text-aurora position-relative">
+                    <div class="controller-container">
+                      <div class="pause">
+                        <div class="line line_1"></div>
+                        <div class="line line_2"></div>
+                      </div>
+                      <div class="play active">
+                        <div class="line line_1"></div>
+                        <div class="line line_2"></div>
+                        <div class="line line_3"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="play-bar col">
+                    <div class="time d-flex justify-content-between align-items-center text-muted small"> <span class="seek">00:00</span><span class="duration">01:12</span></div>
+                    <div class="bar bar-slider tooltip bar-sm my-2" data-tooltip="0%">
+                      <div class="bar-item" role="progressbar"></div>
+                    </div>
+                  </div>
+                  <div class="sound-controller col"><span class="text-muted small mute d-flex justify-content-between align-items-center"> 
+                      <svg class="bi bi-volume-up" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewbox="0 0 16 16">
+                        <path d="M11.536 14.01A8.473 8.473 0 0 0 14.026 8a8.473 8.473 0 0 0-2.49-6.01l-.708.707A7.476 7.476 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303l.708.707z"></path>
+                        <path d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.483 5.483 0 0 1 11.025 8a5.483 5.483 0 0 1-1.61 3.89l.706.706z"></path>
+                        <path d="M10.025 8a4.486 4.486 0 0 1-1.318 3.182L8 10.475A3.489 3.489 0 0 0 9.025 8c0-.966-.392-1.841-1.025-2.475l.707-.707A4.486 4.486 0 0 1 10.025 8zM7 4a.5.5 0 0 0-.812-.39L3.825 5.5H1.5A.5.5 0 0 0 1 6v4a.5.5 0 0 0 .5.5h2.325l2.363 1.89A.5.5 0 0 0 7 12V4zM4.312 6.39 6 5.04v5.92L4.312 9.61A.5.5 0 0 0 4 9.5H2v-3h2a.5.5 0 0 0 .312-.11z"></path>
+                      </svg><span class="volume-size">50%</span></span>
+                    <label class="volume-label m-0 tooltip" for="sound-slider" data-tooltip="50%">
+                      <input class="slider volume-changer" id="sound-slider" type="range" min="0" max="100" value="50" oninput="this.setAttribute('value', this.value);">
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="single-music-container my-4" data-url="../../music/2.mp3">
+                <h4 class="text-muted my-2">demon layer</h4>
+                <div class="d-flex justify-content-between align-items-center"> 
+                  <div class="player-btn col text-aurora position-relative">
+                    <div class="controller-container">
+                      <div class="pause">
+                        <div class="line line_1"></div>
+                        <div class="line line_2"></div>
+                      </div>
+                      <div class="play active">
+                        <div class="line line_1"></div>
+                        <div class="line line_2"></div>
+                        <div class="line line_3"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="play-bar col">
+                    <div class="time d-flex justify-content-between align-items-center text-muted small"> <span class="seek">00:00</span><span class="duration">01:12</span></div>
+                    <div class="bar bar-slider tooltip bar-sm my-2" data-tooltip="0%">
+                      <div class="bar-item" role="progressbar"></div>
+                    </div>
+                  </div>
+                  <div class="sound-controller col"><span class="text-muted small mute d-flex justify-content-between align-items-center"> 
+                      <svg class="bi bi-volume-up" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewbox="0 0 16 16">
+                        <path d="M11.536 14.01A8.473 8.473 0 0 0 14.026 8a8.473 8.473 0 0 0-2.49-6.01l-.708.707A7.476 7.476 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303l.708.707z"></path>
+                        <path d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.483 5.483 0 0 1 11.025 8a5.483 5.483 0 0 1-1.61 3.89l.706.706z"></path>
+                        <path d="M10.025 8a4.486 4.486 0 0 1-1.318 3.182L8 10.475A3.489 3.489 0 0 0 9.025 8c0-.966-.392-1.841-1.025-2.475l.707-.707A4.486 4.486 0 0 1 10.025 8zM7 4a.5.5 0 0 0-.812-.39L3.825 5.5H1.5A.5.5 0 0 0 1 6v4a.5.5 0 0 0 .5.5h2.325l2.363 1.89A.5.5 0 0 0 7 12V4zM4.312 6.39 6 5.04v5.92L4.312 9.61A.5.5 0 0 0 4 9.5H2v-3h2a.5.5 0 0 0 .312-.11z"></path>
+                      </svg><span class="volume-size">50%</span></span>
+                    <label class="volume-label m-0 tooltip" for="sound-slider" data-tooltip="50%">
+                      <input class="slider volume-changer" id="sound-slider" type="range" min="0" max="100" value="50" oninput="this.setAttribute('value', this.value);">
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="single-music-container my-4" data-url="../../music/3.mp3">
+                <h4 class="text-muted my-2">parasite in best</h4>
+                <div class="d-flex justify-content-between align-items-center"> 
+                  <div class="player-btn col text-aurora position-relative">
+                    <div class="controller-container">
+                      <div class="pause">
+                        <div class="line line_1"></div>
+                        <div class="line line_2"></div>
+                      </div>
+                      <div class="play active">
+                        <div class="line line_1"></div>
+                        <div class="line line_2"></div>
+                        <div class="line line_3"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="play-bar col">
+                    <div class="time d-flex justify-content-between align-items-center text-muted small"> <span class="seek">00:00</span><span class="duration">01:12</span></div>
+                    <div class="bar bar-slider tooltip bar-sm my-2" data-tooltip="0%">
+                      <div class="bar-item" role="progressbar"></div>
+                    </div>
+                  </div>
+                  <div class="sound-controller col"><span class="text-muted small mute d-flex justify-content-between align-items-center"> 
+                      <svg class="bi bi-volume-up" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewbox="0 0 16 16">
+                        <path d="M11.536 14.01A8.473 8.473 0 0 0 14.026 8a8.473 8.473 0 0 0-2.49-6.01l-.708.707A7.476 7.476 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303l.708.707z"></path>
+                        <path d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.483 5.483 0 0 1 11.025 8a5.483 5.483 0 0 1-1.61 3.89l.706.706z"></path>
+                        <path d="M10.025 8a4.486 4.486 0 0 1-1.318 3.182L8 10.475A3.489 3.489 0 0 0 9.025 8c0-.966-.392-1.841-1.025-2.475l.707-.707A4.486 4.486 0 0 1 10.025 8zM7 4a.5.5 0 0 0-.812-.39L3.825 5.5H1.5A.5.5 0 0 0 1 6v4a.5.5 0 0 0 .5.5h2.325l2.363 1.89A.5.5 0 0 0 7 12V4zM4.312 6.39 6 5.04v5.92L4.312 9.61A.5.5 0 0 0 4 9.5H2v-3h2a.5.5 0 0 0 .312-.11z"></path>
+                      </svg><span class="volume-size">50%</span></span>
+                    <label class="volume-label m-0 tooltip" for="sound-slider" data-tooltip="50%">
+                      <input class="slider volume-changer" id="sound-slider" type="range" min="0" max="100" value="50" oninput="this.setAttribute('value', this.value);">
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="single-music-container my-4" data-url="../../music/5.mp3">
+                <h4 class="text-muted my-2">back to space</h4>
+                <div class="d-flex justify-content-between align-items-center"> 
+                  <div class="player-btn col text-aurora position-relative">
+                    <div class="controller-container">
+                      <div class="pause">
+                        <div class="line line_1"></div>
+                        <div class="line line_2"></div>
+                      </div>
+                      <div class="play active">
+                        <div class="line line_1"></div>
+                        <div class="line line_2"></div>
+                        <div class="line line_3"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="play-bar col">
+                    <div class="time d-flex justify-content-between align-items-center text-muted small"> <span class="seek">00:00</span><span class="duration">01:12</span></div>
+                    <div class="bar bar-slider tooltip bar-sm my-2" data-tooltip="0%">
+                      <div class="bar-item" role="progressbar"></div>
+                    </div>
+                  </div>
+                  <div class="sound-controller col"><span class="text-muted small mute d-flex justify-content-between align-items-center"> 
+                      <svg class="bi bi-volume-up" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewbox="0 0 16 16">
+                        <path d="M11.536 14.01A8.473 8.473 0 0 0 14.026 8a8.473 8.473 0 0 0-2.49-6.01l-.708.707A7.476 7.476 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303l.708.707z"></path>
+                        <path d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.483 5.483 0 0 1 11.025 8a5.483 5.483 0 0 1-1.61 3.89l.706.706z"></path>
+                        <path d="M10.025 8a4.486 4.486 0 0 1-1.318 3.182L8 10.475A3.489 3.489 0 0 0 9.025 8c0-.966-.392-1.841-1.025-2.475l.707-.707A4.486 4.486 0 0 1 10.025 8zM7 4a.5.5 0 0 0-.812-.39L3.825 5.5H1.5A.5.5 0 0 0 1 6v4a.5.5 0 0 0 .5.5h2.325l2.363 1.89A.5.5 0 0 0 7 12V4zM4.312 6.39 6 5.04v5.92L4.312 9.61A.5.5 0 0 0 4 9.5H2v-3h2a.5.5 0 0 0 .312-.11z"></path>
+                      </svg><span class="volume-size">50%</span></span>
+                    <label class="volume-label m-0 tooltip" for="sound-slider" data-tooltip="50%">
+                      <input class="slider volume-changer" id="sound-slider" type="range" min="0" max="100" value="50" oninput="this.setAttribute('value', this.value);">
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5 pl-0 my-5 d-none d-lg-block">
+            <div class="pl-5 pb-5 w-100 h-100" style="background-color:#f2f2f2;"> 
+              <div class="w-100 h-100 rounded-top tracks-img overflow-hidden" style="height:450px;background: url(&quot;../images/ice-man.jpg&quot;);background-size: cover;background-repeat: no-repeat;background-position: center;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="works my-5 py-5">
+      <h3 class="d-none">empty heading</h3>
+      <div class="row mx-0 my-0 align-items-center">
+        <div class="lastWork col-lg-6 text-center">
+          <div class="overlay"></div>
+          <div class="player"><a href="#">
+              <svg class="icon bi) bi-play-fill" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" viewBox="0 0 16 16">
+                <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"></path>
+              </svg></a></div>
+        </div>
+        <div class="oldWorks col-lg-6">
+          <div class="row">
+            <div class="work my-3 my-md-0 p-3 text-center col-md-6 order-1">
+              <svg class="text-aurora bi bi-controller" xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" viewbox="0 0 16 16">
+                <path d="M11.5 6.027a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm-1.5 1.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zm2.5-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm-1.5 1.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zm-6.5-3h1v1h1v1h-1v1h-1v-1h-1v-1h1v-1z"></path>
+                <path d="M3.051 3.26a.5.5 0 0 1 .354-.613l1.932-.518a.5.5 0 0 1 .62.39c.655-.079 1.35-.117 2.043-.117.72 0 1.443.041 2.12.126a.5.5 0 0 1 .622-.399l1.932.518a.5.5 0 0 1 .306.729c.14.09.266.19.373.297.408.408.78 1.05 1.095 1.772.32.733.599 1.591.805 2.466.206.875.34 1.78.364 2.606.024.816-.059 1.602-.328 2.21a1.42 1.42 0 0 1-1.445.83c-.636-.067-1.115-.394-1.513-.773-.245-.232-.496-.526-.739-.808-.126-.148-.25-.292-.368-.423-.728-.804-1.597-1.527-3.224-1.527-1.627 0-2.496.723-3.224 1.527-.119.131-.242.275-.368.423-.243.282-.494.575-.739.808-.398.38-.877.706-1.513.773a1.42 1.42 0 0 1-1.445-.83c-.27-.608-.352-1.395-.329-2.21.024-.826.16-1.73.365-2.606.206-.875.486-1.733.805-2.466.315-.722.687-1.364 1.094-1.772a2.34 2.34 0 0 1 .433-.335.504.504 0 0 1-.028-.079zm2.036.412c-.877.185-1.469.443-1.733.708-.276.276-.587.783-.885 1.465a13.748 13.748 0 0 0-.748 2.295 12.351 12.351 0 0 0-.339 2.406c-.022.755.062 1.368.243 1.776a.42.42 0 0 0 .426.24c.327-.034.61-.199.929-.502.212-.202.4-.423.615-.674.133-.156.276-.323.44-.504C4.861 9.969 5.978 9.027 8 9.027s3.139.942 3.965 1.855c.164.181.307.348.44.504.214.251.403.472.615.674.318.303.601.468.929.503a.42.42 0 0 0 .426-.241c.18-.408.265-1.02.243-1.776a12.354 12.354 0 0 0-.339-2.406 13.753 13.753 0 0 0-.748-2.295c-.298-.682-.61-1.19-.885-1.465-.264-.265-.856-.523-1.733-.708-.85-.179-1.877-.27-2.913-.27-1.036 0-2.063.091-2.913.27z"></path>
+              </svg>
+              <h2>training</h2>
+              <p class="text-muted">Early tribes of humans were probably similar to tribes of other apes&mdash;glued together mostly by family ties.</p>
+            </div>
+            <div class="work my-3 my-md-0 p-3 text-center col-md-6 order-2">
+              <svg class="text-aurora bi bi-yin-yang" xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" viewbox="0 0 16 16">
+                <path d="M9.167 4.5a1.167 1.167 0 1 1-2.334 0 1.167 1.167 0 0 1 2.334 0Z"></path>
+                <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0ZM1 8a7 7 0 0 1 7-7 3.5 3.5 0 1 1 0 7 3.5 3.5 0 1 0 0 7 7 7 0 0 1-7-7Zm7 4.667a1.167 1.167 0 1 1 0-2.334 1.167 1.167 0 0 1 0 2.334Z"></path>
+                <h2>hard</h2>
+                <p class="text-muted">Early tribes of humans were probably similar to tribes of other apes&mdash;glued together mostly by family ties.</p>
+              </svg>
+            </div>
+            <div class="work my-3 my-md-0 p-3 text-center col-md-6 order-3">
+              <svg class="text-aurora bi bi-speedometer2" xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" viewbox="0 0 16 16">
+                <path d="M8 4a.5.5 0 0 1 .5.5V6a.5.5 0 0 1-1 0V4.5A.5.5 0 0 1 8 4zM3.732 5.732a.5.5 0 0 1 .707 0l.915.914a.5.5 0 1 1-.708.708l-.914-.915a.5.5 0 0 1 0-.707zM2 10a.5.5 0 0 1 .5-.5h1.586a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 10zm9.5 0a.5.5 0 0 1 .5-.5h1.5a.5.5 0 0 1 0 1H12a.5.5 0 0 1-.5-.5zm.754-4.246a.389.389 0 0 0-.527-.02L7.547 9.31a.91.91 0 1 0 1.302 1.258l3.434-4.297a.389.389 0 0 0-.029-.518z"></path>
+                <path fill-rule="evenodd" d="M0 10a8 8 0 1 1 15.547 2.661c-.442 1.253-1.845 1.602-2.932 1.25C11.309 13.488 9.475 13 8 13c-1.474 0-3.31.488-4.615.911-1.087.352-2.49.003-2.932-1.25A7.988 7.988 0 0 1 0 10zm8-7a7 7 0 0 0-6.603 9.329c.203.575.923.876 1.68.63C4.397 12.533 6.358 12 8 12s3.604.532 4.923.96c.757.245 1.477-.056 1.68-.631A7 7 0 0 0 8 3z"></path>
+              </svg>
+              <h2>speed</h2>
+              <p class="text-muted">Early tribes of humans were probably similar to tribes of other apes&mdash;glued together mostly by family ties.</p>
+            </div>
+            <div class="work my-3 my-md-0 p-3 text-center col-md-6 order-4">
+              <svg class="text-aurora bi bi-sunglasses" xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" viewbox="0 0 16 16">
+                <path d="M3 5a2 2 0 0 0-2 2v.5H.5a.5.5 0 0 0 0 1H1V9a2 2 0 0 0 2 2h1a3 3 0 0 0 3-3 1 1 0 1 1 2 0 3 3 0 0 0 3 3h1a2 2 0 0 0 2-2v-.5h.5a.5.5 0 0 0 0-1H15V7a2 2 0 0 0-2-2h-2a2 2 0 0 0-1.888 1.338A1.99 1.99 0 0 0 8 6a1.99 1.99 0 0 0-1.112.338A2 2 0 0 0 5 5H3zm0 1h.941c.264 0 .348.356.112.474l-.457.228a2 2 0 0 0-.894.894l-.228.457C2.356 8.289 2 8.205 2 7.94V7a1 1 0 0 1 1-1z"></path>
+              </svg>
+              <h2>top</h2>
+              <p class="text-muted">Early tribes of humans were probably similar to tribes of other apes&mdash;glued together mostly by family ties.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="youtube py-5 my-5">
+      <div class="container">
+        <h2 class="my-3 background-text text-center" data-text="Youtube feed">latest videos</h2>
+        <div class="row mt-5 justify-content-around text-center">
+          <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="work rounded-bottom">
+              <div class="img rounded-top position-relative" style="height:250px;background: url(&quot;../images/wallpaper-flare-1.jpg&quot;);background-size: cover;background-repeat: no-repeat;background-position: center;">
+                <div class="overlay"></div>
+              </div>
+              <div class="player"><a href="#">
+                  <svg class="icon bi) bi-play-fill" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"></path>
+                  </svg></a></div>
+              <h4 class="text-muted my-1 p-3">David Guetta Miami </h4>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="work rounded-bottom">
+              <div class="img rounded-top position-relative" style="height:250px;background: url(&quot;../images/wallpaper-flare-2.jpg&quot;);background-size: cover;background-repeat: no-repeat;background-position: center;">
+                <div class="overlay"></div>
+              </div>
+              <div class="player"><a href="#">
+                  <svg class="icon bi) bi-play-fill" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"></path>
+                  </svg></a></div>
+              <h4 class="text-muted my-1 p-3">SLAM!Koningsdag</h4>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="work rounded-bottom">
+              <div class="img rounded-top position-relative" style="height:250px;background: url(&quot;../images/wallpaper-flare-3.jpg&quot;);background-size: cover;background-repeat: no-repeat;background-position: center;">
+                <div class="overlay"></div>
+              </div>
+              <div class="player"><a href="#">
+                  <svg class="icon bi) bi-play-fill" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"></path>
+                  </svg></a></div>
+              <h4 class="text-muted my-1 p-3">Martin Garrix</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="timeEvent text-center py-5 mt-5">
+      <h2 class="my-5 display-4 border-top border-bottom py-4 border-dark font-weight-bold">tomorrow land 2025</h2>
+      <h3 class="my-3 h4">music festival start in</h3>
+      <div class="contain">
+        <ul class="p-0 m-0">
+          <li><span class="display-4 d-block" id="js-days"> 00</span>days</li>
+          <li><span class="display-4 d-block" id="js-hours"> 00</span>Hours</li>
+          <li><span class="display-4 d-block" id="js-minutes"> 00</span>Minutes</li>
+          <li><span class="display-4 d-block" id="js-seconds">00</span>Seconds</li>
+        </ul>
+      </div>
+      <button class="btn btn-aurora btn-lg mt-4">Buy A Ticket</button>
+    </section>
+    <footer class="pt-2 pb-3">
+      <div class="container">
+        <div class="more-link text-white">
+          <div class="row justify-content-center align-items-center">
+            <div class="col-md-6 col-lg-4 col-sm-6 my-3"> 
+              <div class="media">
+                <div class="icon align-self-center mr-2 rounded-circle p-3 border" style="border-width:2px !important;"> 
+                  <svg class="bi bi-telephone" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" viewbox="0 0 16 16">
+                    <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"></path>
+                  </svg>
+                </div>
+                <div class="media-body">
+                  <p>
+                    <p class="mb-1 h5">phone</p>000-000-000
+                  </p>
+                </div>
+              </div>
+              <div class="media mt-3">
+                <div class="icon align-self-center mr-2 rounded-circle p-3 border" style="border-width:2px !important;"> 
+                  <svg class="bi bi-envelope" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"></path>
+                  </svg>
+                </div>
+                <div class="media-body">
+                  <p>
+                    <p class="mb-1 lead">e-mail</p>example@io.io 
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 col-sm-6 my-3"> 
+              <h3 class="mb-4 text-center">DJ MUSIC</h3>
+              <div class="d-flex justify-content-center">
+                <div class="icon tooltip align-self-center mr-2 rounded-circle p-3 border" style="border-width:2px !important;" data-tooltip="discord"> 
+                  <svg class="bi bi-discord" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M13.545 2.907a13.227 13.227 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.19 12.19 0 0 0-3.658 0 8.258 8.258 0 0 0-.412-.833.051.051 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.041.041 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032c.001.014.01.028.021.037a13.276 13.276 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019c.308-.42.582-.863.818-1.329a.05.05 0 0 0-.01-.059.051.051 0 0 0-.018-.011 8.875 8.875 0 0 1-1.248-.595.05.05 0 0 1-.02-.066.051.051 0 0 1 .015-.019c.084-.063.168-.129.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.052.052 0 0 1 .053.007c.08.066.164.132.248.195a.051.051 0 0 1-.004.085 8.254 8.254 0 0 1-1.249.594.05.05 0 0 0-.03.03.052.052 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.235 13.235 0 0 0 4.001-2.02.049.049 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.034.034 0 0 0-.02-.019Zm-8.198 7.307c-.789 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612Zm5.316 0c-.788 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612Z"></path>
+                  </svg>
+                </div>
+                <div class="icon tooltip align-self-center mr-2 rounded-circle p-3 border" style="border-width:2px !important;" data-tooltip="instagram"> 
+                  <svg class="bi bi-instagram" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" viewbox="0 0 16 16">
+                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"></path>
+                  </svg>
+                </div>
+                <div class="icon tooltip align-self-center mr-2 rounded-circle p-3 border" style="border-width:2px !important;" data-tooltip="github"> 
+                  <svg class="bi bi-github" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" viewbox="0 0 16 16">
+                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
+                  </svg>
+                </div>
+                <div class="icon tooltip align-self-center mr-2 rounded-circle p-3 border" style="border-width:2px !important;" data-tooltip="youtube"> 
+                  <svg class="bi bi-youtube" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" viewbox="0 0 16 16">
+                    <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-8 col-lg-4 my-3">
+              <h3 class="mb-4 text-center">stay with us</h3>
+              <div class="contact-form bg-white p-2 rounded d-flex justify-content-center align-items-center">
+                <input class="form-control" type="email" placeholder="Enter Email">
+                <button class="btn btn-aurora"> 
+                  <svg class="bi bi-cursor" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M14.082 2.182a.5.5 0 0 1 .103.557L8.528 15.467a.5.5 0 0 1-.917-.007L5.57 10.694.803 8.652a.5.5 0 0 1-.006-.916l12.728-5.657a.5.5 0 0 1 .556.103zM2.25 8.184l3.897 1.67a.5.5 0 0 1 .262.263l1.67 3.897L12.743 3.52 2.25 8.184z"></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="bg-light">
+        <div class="copyRight mt-3 d-flex justify-content-between">
+          <div class="content text-center text-md-left text-white">Copyright &copy; 2020 -<span class="mx-1" id="js-current-year">2050</span>
+            <svg class="mx-1 bi bi-code" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M5.854 4.854a.5.5 0 1 0-.708-.708l-3.5 3.5a.5.5 0 0 0 0 .708l3.5 3.5a.5.5 0 0 0 .708-.708L2.707 8l3.147-3.146zm4.292 0a.5.5 0 0 1 .708-.708l3.5 3.5a.5.5 0 0 1 0 .708l-3.5 3.5a.5.5 0 0 1-.708-.708L13.293 8l-3.147-3.146z"> </path>
+            </svg> with 
+            <svg class="bi bi-heart-fill mx-2" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewbox="0 0 16 16">
+              <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"></path>
+            </svg> by <a class="text-white" href="https://github.com/mohammed-taysser">Mohammed</a>
+          </div>
+          <div class="d-none d-md-inline-block text-right">
+            <svg class="bi bi-instagram text-light mr-2" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewbox="0 0 16 16">
+              <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"></path>
+            </svg>
+            <svg class="bi bi-github text-light mr-2" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewbox="0 0 16 16">
+              <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
+            </svg>
+            <svg class="bi bi-youtube mr-2 text-light" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewbox="0 0 16 16">
+              <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"></path>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="../javascript/build/glide.min.js"> </script>
+  <script src="../javascript/build/howler.min.js"> </script>
+  <script src="../javascript/build/simple-bar.min.js"> </script>
+  <script src="../javascript/build/nice-select.min.js"> </script>
+  <script src="../javascript/build/scripts.min.js"> </script>
+</html>

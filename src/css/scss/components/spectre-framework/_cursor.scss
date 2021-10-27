@@ -1,7 +1,0 @@
-$cursor: (pointer, move, zoom-in, zoom-out, not-allowed, auto);
-
-@each $title in $cursor{
-    .cursor-#{$title} {
-        cursor: $title;
-      }
-}

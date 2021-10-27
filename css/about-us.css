@@ -1,0 +1,539 @@
+@font-face {
+  font-family: Montserrat;
+  src: url("../fonts/Montserrat english fonts/Montserrat-Regular.ttf");
+}
+@font-face {
+  font-family: Tajawal;
+  src: url("../fonts/Tajawal arabic font/Tajawal-Regular.ttf");
+}
+.tajawal {
+  font-family: Tajawal, sans-serif;
+}
+
+body {
+  font-family: Montserrat, sans-serif !important;
+  text-transform: capitalize;
+}
+
+::selection {
+  background-color: #333;
+  color: #fff;
+}
+
+.nice-shadow {
+  box-shadow: 0 3px 15px rgba(22, 41, 124, 0.1);
+}
+
+.transition {
+  transition: 0.5s;
+}
+
+.special-header::before {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 100px;
+  margin: 0 auto;
+  position: relative;
+  background-color: #F037A5;
+  top: 80px;
+}
+
+.background-text {
+  font-size: 2.7em;
+  font-weight: bold;
+  position: relative;
+}
+
+.background-text::before {
+  font-family: "Kaushan Script", cursive;
+  position: absolute;
+  font-size: 1.5em;
+  font-weight: normal;
+  color: #f2f2f2;
+  top: -16px;
+  left: 0;
+  content: attr(data-text);
+  width: 100%;
+  z-index: -1;
+}
+
+.p-100 {
+  padding: 100px 0;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.rotate--90 {
+  transform: rotate(-90deg);
+}
+
+.btn.btn-aurora {
+  background: #F037A5;
+  border-color: #f466ba;
+  color: #fff;
+}
+
+.btn.btn-aurora:focus,
+.btn.btn-aurora:hover {
+  background: #f466ba;
+  border-color: #f57ec5;
+  color: #fff;
+}
+
+.btn.btn-aurora:focus {
+  box-shadow: 0 0 0 0.2rem #f8a4d6;
+}
+
+.btn.btn-aurora:active,
+.btn.btn-aurora.active {
+  background: #e3118e;
+  border-color: #cb0f7f;
+  color: #fff;
+}
+
+.text-aurora {
+  color: #F037A5;
+}
+
+.bg-aurora {
+  background-color: #F037A5;
+}
+
+.skew-divider-bottom::before, .skew-divider-top::before, .skew-divider::before, .skew-divider::after {
+  content: "";
+  background-color: #F8F8F8;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: skewY(-6deg);
+}
+
+.skew-divider {
+  position: relative;
+  margin-top: 200px;
+  margin-bottom: 200px;
+}
+.skew-divider::before {
+  transform-origin: top left;
+}
+.skew-divider::after {
+  transform-origin: bottom right;
+}
+
+.skew-divider-top {
+  position: relative;
+  margin-top: 200px;
+}
+.skew-divider-top::before {
+  transform-origin: top left;
+}
+
+.skew-divider-bottom {
+  position: relative;
+  margin-bottom: 200px;
+}
+.skew-divider-bottom::before {
+  transform-origin: bottom right;
+}
+
+.skew-divider-img {
+  position: relative;
+}
+.skew-divider-img::after {
+  background-image: url("../images/background.png");
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: skewY(-6deg);
+  transform-origin: bottom right;
+}
+
+@keyframes border-transform {
+  0%, 100% {
+    border-radius: 63% 37% 54% 46%/55% 48% 52% 45%;
+  }
+  14% {
+    border-radius: 40% 60% 54% 46%/49% 60% 40% 51%;
+  }
+  28% {
+    border-radius: 54% 46% 38% 62%/49% 70% 30% 51%;
+  }
+  42% {
+    border-radius: 61% 39% 55% 45%/61% 38% 62% 39%;
+  }
+  56% {
+    border-radius: 61% 39% 67% 33%/70% 50% 50% 30%;
+  }
+  70% {
+    border-radius: 50% 50% 34% 66%/56% 68% 32% 44%;
+  }
+  84% {
+    border-radius: 46% 54% 50% 50%/35% 61% 39% 65%;
+  }
+}
+@keyframes ripple-out {
+  100% {
+    top: -14px;
+    right: -14px;
+    bottom: -14px;
+    left: -14px;
+    opacity: 0;
+  }
+}
+.overlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #f1f1f1e6;
+}
+
+/*------------------ player icon -------------*/
+.player {
+  border-radius: 50%;
+  border: 3px solid #F037A5;
+  width: 60px;
+  margin: 0 auto;
+  cursor: pointer;
+  height: 60px;
+  transform: perspective(1px) translateZ(0);
+  position: relative;
+  transition: all ease-in-out 0.7s;
+}
+
+.player .icon {
+  position: relative;
+  top: 15px;
+  color: #F037A5;
+  left: 1px;
+  transition: all ease-in-out 0.7s;
+}
+
+.player:hover {
+  background-color: #F037A5;
+}
+
+.player:hover .icon {
+  color: #F8F8F8;
+}
+
+.player:before {
+  content: "";
+  position: absolute;
+  border: #e1e1e1 solid 10px;
+  border-radius: 50%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transition: all ease-in-out 0.8s;
+  animation: ripple-out infinite 1s;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  5% {
+    transform: scale(1.3);
+  }
+  10% {
+    transform: scale(1);
+  }
+}
+@keyframes steam {
+  0% {
+    color: #eee;
+  }
+  50% {
+    color: #ffc107;
+  }
+  100% {
+    color: #eee;
+  }
+}
+.img img {
+  transition: all 0.5s;
+}
+
+.img:hover img {
+  transform: scale(1.2);
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: calc(1.5em + 0.75rem + 2px);
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  outline: none;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control-lg {
+  height: calc(1.5em + 1rem + 2px);
+  padding: 0.5rem 1rem;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  border-radius: 0.3rem;
+}
+
+.form-row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -5px;
+  margin-left: -5px;
+}
+
+.form-row > .col, .form-row > [class*=col-] {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-control:focus {
+  color: #333;
+  background-color: #fff;
+  border-color: #F037A5;
+  box-shadow: 0 0 0 0.2rem #fbc5e5;
+}
+
+/*
+<!-- normal bars -->
+<div class="bar bar-sm">
+  <div class="bar-item" role="progressbar" style="width:25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+
+<!-- multi-bars -->
+<div class="bar">
+  <div class="bar-item tooltip" data-tooltip="25%" style="width:25%;">25%</div>
+  <div class="bar-item" style="width:15%;background:#818bd5;">15%</div>
+</div>
+
+<!-- normal slider -->
+<div class="bar bar-slider">
+  <div class="bar-item" role="progressbar" style="width:25%;">
+    <button class="bar-slider-btn btn" role="slider"></button>
+  </div>
+</div>
+
+<!-- range slider -->
+<div class="bar bar-slider">
+  <div class="bar-item" role="progressbar" style="width:15%;">
+    <button class="bar-slider-btn btn" role="slider"></button>
+  </div>
+  <div class="bar-item" role="progressbar" style="width:65%;">
+    <button class="bar-slider-btn btn" role="slider"></button>
+  </div>
+</div>
+
+
+
+
+progressbar
+<progress class="progress" value="25" max="100"></progress>
+<progress class="progress" max="100"></progress>
+*/
+.bar {
+  background: #eef0f3;
+  border-radius: 0.1rem;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  height: 0.8rem;
+  width: 100%;
+}
+.bar.bar-sm {
+  height: 0.2rem;
+}
+.bar .bar-item {
+  background: #5755d9;
+  color: #fff;
+  display: block;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  font-size: 0.7rem;
+  height: 100%;
+  line-height: 0.8rem;
+  position: relative;
+  text-align: center;
+  width: 0;
+}
+.bar .bar-item:first-child {
+  border-bottom-left-radius: 0.1rem;
+  border-top-left-radius: 0.1rem;
+}
+.bar .bar-item:last-child {
+  border-bottom-right-radius: 0.1rem;
+  border-top-right-radius: 0.1rem;
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
+}
+.bar .bar-slider {
+  height: 0.1rem;
+  margin: 0.4rem 0;
+  position: relative;
+}
+.bar .bar-slider .bar-item {
+  left: 0;
+  padding: 0;
+  position: absolute;
+}
+.bar .bar-slider .bar-item:not(:last-child):first-child {
+  background: #eef0f3;
+  z-index: 1;
+}
+.bar .bar-slider .bar-slider-btn {
+  background: #5755d9;
+  border: 0;
+  border-radius: 50%;
+  height: 0.6rem;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(50%, -50%);
+  width: 0.6rem;
+}
+.bar .bar-slider .bar-slider-btn:active {
+  box-shadow: 0 0 0 0.1rem #5755d9;
+}
+
+.progress {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: #eef0f3;
+  border: 0;
+  border-radius: 0.1rem;
+  color: #5755d9;
+  height: 0.2rem;
+  position: relative;
+  width: 100%;
+}
+.progress::-webkit-progress-bar {
+  background: transparent;
+  border-radius: 0.1rem;
+}
+.progress::-webkit-progress-value {
+  background: #5755d9;
+  border-radius: 0.1rem;
+}
+.progress::-moz-progress-bar {
+  background: #5755d9;
+  border-radius: 0.1rem;
+}
+.progress:indeterminate {
+  animation: progress-indeterminate 1.5s linear infinite;
+  background: #eef0f3 linear-gradient(to right, #5755d9 30%, #eef0f3 30%) top left/150% 150% no-repeat;
+}
+.progress:indeterminate::-moz-progress-bar {
+  background: transparent;
+}
+@keyframes progress-indeterminate {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+.statistical .overlay {
+  background-color: #f1f1f18c;
+}
+.statistical .bar {
+  background-color: #d9d6d6;
+}
+.statistical .bar-slider .bar-item {
+  background-color: #F037A5;
+}
+.statistical .bar-slider .bar-slider-btn {
+  background: #F037A5;
+  border: 0;
+  border-radius: 50%;
+  height: 0.6rem;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(50%, -50%);
+  width: 0.6rem;
+}
+.statistical .tooltip::after,
+.statistical .tooltip::after {
+  opacity: 1;
+  transform: translate(-50%, -0.2rem);
+}
+
+.about-me .img img {
+  animation: border-transform 10s linear infinite alternate forwards;
+}
+
+.our-works .img img {
+  transition: all 0.5s;
+}
+.our-works .img:hover img {
+  transform: scale(1.2);
+}
+
+.places .place {
+  transition: all 0.5s ease-in-out;
+}
+.places .place:hover {
+  box-shadow: 0px 3px 15px rgba(22, 41, 124, 0.1);
+}
+.places .place .content span {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -55px;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background-color: #fff;
+  margin: 0 auto;
+  transition: all 0.7s ease-in-out;
+}
+.places .place .content span svg {
+  position: relative;
+  top: 20px;
+  left: 1px;
+}
+.places .img img {
+  transition: all 0.5s;
+}
+.places .img:hover img {
+  transform: scale(1.2);
+}
+/*# sourceMappingURL=about-us.css.map */

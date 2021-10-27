@@ -1,0 +1,36 @@
+.timeEvent {
+  background-color: #f2f2f2;
+}
+.timeEvent .contain {
+  color: #333;
+  margin: 0 auto;
+  padding: 0.5rem;
+}
+.timeEvent .contain li {
+  display: inline-block;
+  font-size: 1.5em;
+  list-style-type: none;
+  padding: 1em;
+  text-transform: uppercase;
+}
+
+.single-tour-container:nth-child(2n) .image:before, .single-tour-container:nth-child(2n-1) .image:before {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 100%;
+  border: 20px solid #eee;
+  z-index: -1;
+  border-radius: 5px;
+}
+
+.single-tour-container:nth-child(2n-1) .image:before {
+  top: -50px;
+  left: 50px;
+}
+.single-tour-container:nth-child(2n) .image:before {
+  top: -50px;
+  right: 50px;
+}
+/*# sourceMappingURL=tour.css.map */
