@@ -1,9 +1,10 @@
-# DJ-Music-Templete v2
+# DJ-Music v2
 
-first multiple page desined with alot of feathers
+first multiple page designed with a lot of feathers like animation and task runner
+
+feel free to have a look
 
 for [live demo](https://mohammed-taysser.github.io/DJ-Music/)
-
 
 No jQuery needed :smile:
 
