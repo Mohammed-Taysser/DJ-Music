@@ -22,6 +22,7 @@ No jQuery needed :smile:
 
 ## Future Feather
 
+- [ ] add loading animation
 - [ ] stop playing music once play new one
 - [ ] add fancy share button on blogs
 - [ ] using any font library instead of pure svg (it take a lot of lines)
