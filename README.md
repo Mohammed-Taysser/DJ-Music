@@ -7,4 +7,4 @@ for [live demo](https://mohammed-taysser.github.io/DJ-Music/)
 ## Future Feather
 
 - [ ] stop playing music once play new one
-- [ ] add share button on blogs
+- [ ] add fancy share button on blogs
