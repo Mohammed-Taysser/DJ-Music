@@ -1,0 +1,70 @@
+
+/*
+<div class="tile">
+  <div class="tile-icon">
+    <div class="example-tile-icon">
+      <i class="icon icon-file centered"></i>
+    </div>
+  </div>
+  <div class="tile-content">
+    <p class="tile-title">The Avengers</p>
+    <p class="tile-subtitle">Earth's Mightiest Heroes joined forces to take on threats that were too big for any one hero to tackle...</p>
+  </div>
+  <div class="tile-action">
+    <button class="btn btn-primary">Join</button>
+  </div>
+</div>
+*/
+
+
+
+.tile {
+  align-content: space-between;
+  align-items: flex-start;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: start;
+  -ms-flex-line-pack: justify;
+
+
+.tile-icon,
+.tile-action {
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
+.tile-content {
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+
+.tile-content:not(:first-child) {
+  padding-left: .4rem;
+}
+
+.tile-content:not(:last-child) {
+  padding-right: .4rem;
+}
+
+.tile-title,
+.tile-subtitle {
+  line-height: 1.2rem;
+}
+
+&.tile-centered {
+  align-items: center;
+  -ms-flex-align: center;
+}
+
+&.tile-centered .tile-content {
+  overflow: hidden;
+}
+
+&.tile-centered .tile-title,
+&.tile-centered .tile-subtitle {
+  margin-bottom: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+}

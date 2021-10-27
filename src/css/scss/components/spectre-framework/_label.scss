@@ -1,0 +1,45 @@
+/*
+<span class="label">default label</span>
+<span class="label label-primary">primary label</span>
+<span class="label label-rounded label-primary">primary label</span>
+*/
+
+.label {
+  background: #eef0f3;
+  border-radius: 0.1rem;
+  color: #455060;
+  display: inline-block;
+  line-height: 1.25;
+  padding: 0.1rem 0.2rem;
+
+  .label-rounded {
+    border-radius: 5rem;
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+  }
+
+  .label-primary {
+    background: #5755d9;
+    color: #fff;
+  }
+
+  .label-secondary {
+    background: #f1f1fc;
+    color: #5755d9;
+  }
+
+  .label-success {
+    background: #32b643;
+    color: #fff;
+  }
+
+  .label-warning {
+    background: #ffb700;
+    color: #fff;
+  }
+
+  .label-error {
+    background: #e85600;
+    color: #fff;
+  }
+}

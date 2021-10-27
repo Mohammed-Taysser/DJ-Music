@@ -1,0 +1,114 @@
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@each $point, $value in $container-max-widths {
+  .container-#{$point}{
+    @extend .container;
+  }
+}
+
+@media (min-width: 576px) {
+  .container, .container-sm {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container, .container-sm, .container-md {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container, .container-sm, .container-md, .container-lg {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container, .container-sm, .container-md, .container-lg, .container-xl {
+    max-width: 1140px;
+  }
+}
+
+@mixin media-breakpoint-up($breakpoint, $grid-breakpoints) {
+  @media (min-width: 992px) {
+    .container,
+    .container-sm,
+    .container-md,
+    .container-lg {
+      max-width: 960px;
+    }
+  }
+}
+
+.row {
+	display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+$columns: 12;
+
+@for $width from 1 through 6 {
+  .col-#{$width}{
+    flex-basis: ($width/ $columns * 100%);
+  }
+}
+
+.col{
+  background-color: pink;
+  border: LavenderBlush 2px solid;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.update-col{
+  --columns: 12; /* number of columns in the grid system */
+  --width-default: 0; /* default width, makes it flexible */
+  --width: var(--width-mobile, var(--width-default)); /* width of the element */
+  
+  background-color: pink;
+  border: LavenderBlush 2px solid;
+  border-radius: 8px;
+  padding: 16px;
+  flex-basis: calc(var(--width) / var(--columns) * 100%);
+}
+
+@media (min-width: 576px) {
+  .column {
+    --width: var(--width-tablet, var(--width-mobile, var(--width-default)));
+  }
+}
+
+@media (min-width: 768px) {
+  .column {
+    --width: var(--width-desktop, var(--width-tablet, var(--width-mobile, var(--width-default))));
+  }
+}
+
+/* sections */
+
+.header {
+  --width-mobile: 12;
+  height: 8rem;
+}
+
+.content {
+  --width-mobile: 12;
+  --width-tablet: 6;
+  --width-desktop: 8;
+  height: 6rem;
+}
+
+.sidebar {
+  --width-mobile: 12;
+   --width-tablet: 6;
+  --width-desktop: 4;
+  height: 4rem;
+}

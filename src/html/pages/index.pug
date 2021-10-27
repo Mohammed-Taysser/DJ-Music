@@ -1,0 +1,79 @@
+extends ../layouts/layout
+
+block title 
+	title Home
+
+block style 
+	link(rel="stylesheet", href="../css/home.min.css")
+
+block javascript 
+	script(src="../javascript/build/glide.min.js") 
+	script(src="../javascript/build/howler.min.js") 
+	script(src="../javascript/build/simple-bar.min.js") 
+
+block content 
+
+		header#js-header.position-relative
+			.overlay 
+			.real-header.position-absolute
+				.container.d-table.h-100
+					.row.d-table-cell.h-100.position-relative(style='vertical-align: middle;')
+						.col-md-6.mx-auto
+						.content.text-center
+							p.font-weight-bold.lead new single
+							h1.my-4.py-3.font-weight-bold Feel the  
+								span.icon.tooltip(data-tooltip="Heart") 
+									svg.bi.bi-heart-fill.mx-2(xmlns='http://www.w3.org/2000/svg' width='40' height='40' fill='currentColor' viewbox='0 0 16 16' )
+										path(fill-rule='evenodd' d='M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z') 
+								|  beats
+							p
+								| Building giants was a necessity for ancient humans. A human tribe was more than the sum of its parts, in physical power, in productivity, and in knowledge Given the powers of emergence,
+							.player
+								a(href='#')
+									svg.icon(xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi) bi-play-fill" viewBox="0 0 16 16")
+										path( d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z")
+			.angle-down.position-absolute 
+				a(href='#UPCOMING').text-aurora.transition
+					svg.bi.bi-chevron-double-down(xmlns='http://www.w3.org/2000/svg' width='25' height='25' fill='currentColor' viewbox='0 0 16 16')
+						path(fill-rule='evenodd' d='M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z')
+						path(fill-rule='evenodd' d='M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z')
+
+		include ../components/up-coming-events
+
+		section.about-me.my-5.py-5
+			.container
+				.row
+					.img.col-md-5.align-self-center
+						img.img-fluid.w-100(src='../images/my-photo.jpg' alt="it's my-photo")
+					.content.col-md-7.align-self-center
+						h2.my-3.background-text(data-text='About Mi') Dr Strange
+						p.lead.text-muted
+							| I would lay down my life for two brothers or eight cousins.&rdquo;With that in mind, let&rsquo;s imagine a big extended family made up of 27 immediate families&mdash;the grandchildren and great-grandchildren of a single couple
+						button.btn.btn-aurora.btn-lg Contact Me
+
+		include ../components/podcast-tracks
+
+		include ../components/works
+
+		include ../components/youtube-tracks
+
+		section.timeEvent.text-center.py-5.mt-5
+
+			h2.my-5.display-4.border-top.border-bottom.py-4.border-dark.font-weight-bold tomorrow land 2025
+			h3.my-3.h4 music festival start in
+			.contain
+				ul.p-0.m-0
+					li
+						span.display-4.d-block#js-days  00
+						| days
+					li
+						span.display-4.d-block#js-hours  00
+						| Hours
+					li
+						span.display-4.d-block#js-minutes  00
+						| Minutes
+					li
+						span.display-4.d-block#js-seconds 00
+						| Seconds
+			button.btn.btn-aurora.btn-lg.mt-4 Buy A Ticket
+

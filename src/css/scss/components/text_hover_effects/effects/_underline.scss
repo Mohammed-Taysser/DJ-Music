@@ -1,0 +1,72 @@
+@mixin underline-closing {
+    @include line-options(
+      after,
+      $transition-property: width,
+      $value-of-transitioned-property: math.div($max-value-of-transitioned-property, 2)
+    );
+  
+    @include line-options(
+      before,
+      $transition-property: width,
+      $value-of-transitioned-property: math.div($max-value-of-transitioned-property, 2)
+    );
+    &:after {
+      bottom: 0%;
+      left: 0%;
+    }
+  
+    &:before {
+      bottom: 0%;
+      right: 0%;
+    }
+  }
+  @mixin underline-goes-left {
+    @include line-options(
+      after,
+      $transition-property: width,
+      $value-of-transitioned-property: $max-value-of-transitioned-property
+    );
+  
+    &:after {
+      right: 0%;
+      bottom: 0;
+    }
+  }
+  @mixin underline-goes-right {
+    @include line-options(
+      after,
+      $transition-property: width,
+      $value-of-transitioned-property: $max-value-of-transitioned-property
+    );
+  
+    &:after {
+      left: 0;
+      bottom: 0;
+    }
+  }
+  @mixin underline-opening {
+    @include line-options(
+      after,
+      $transition-property: width,
+      $value-of-transitioned-property: $max-value-of-transitioned-property
+    );
+  
+    @include line-options(
+      before,
+      $transition-property: width,
+      $value-of-transitioned-property: $max-value-of-transitioned-property
+    );
+    &:after {
+      bottom: 0%;
+      left: 0%;
+      right: 0;
+      margin: 0 auto;
+    }
+  
+    &:before {
+      bottom: 0%;
+      right: 0%;
+      left: 0;
+      margin: 0 auto;
+    }
+  }

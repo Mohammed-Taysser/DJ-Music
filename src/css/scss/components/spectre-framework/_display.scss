@@ -1,0 +1,17 @@
+$display-type: (none, block, inline-block, inline, flex, inline-flex);
+$visible-type: (
+  invisible: hidden,
+  visible: visible,
+);
+
+@each $type in $display-type {
+  .d-#{$type} {
+    display: #{$type};
+  }
+}
+
+@each $title, $type in $visible-type {
+  .d-#{$title} {
+    display: #{$type};
+  }
+}

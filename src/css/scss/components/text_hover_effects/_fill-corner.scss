@@ -1,0 +1,33 @@
+@import "base/imports";
+
+.#{$name-of-the-class} {
+  @include transition-options;
+}
+
+/* FILL CORNERS */
+
+.#{$name-of-the-class}-fc-top-left {
+    @include transition-options($hovered-color: $white);
+    @include fc-top-left;
+  }
+  
+  .#{$name-of-the-class}-fc-top-right {
+    @include transition-options($hovered-color: $white);
+    @include fc-top-right;
+  }
+  
+  .#{$name-of-the-class}-fc-bottom-left {
+    @include transition-options($hovered-color: $white);
+    @include fc-bottom-left;
+  }
+  
+  .#{$name-of-the-class}-fc-bottom-right {
+    @include transition-options($hovered-color: $white);
+    @include fc-bottom-right;
+  }
+  
+  .#{$name-of-the-class}-underline-left-delay {
+    @include transition-options($transition-delay: 1s);
+    @include underline-goes-left;
+  }
+  
